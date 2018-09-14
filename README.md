@@ -1,9 +1,6 @@
 # Floating ToTop Button
 This is a simple jQuery plugin for a floating ToTop Button.
 
-## Prerequisites
-* jQuery
-
 ## Future Tasks
 - [x] create jQuery plugin
 - [ ] size modes
@@ -12,6 +9,9 @@ This is a simple jQuery plugin for a floating ToTop Button.
 - [ ] custom class applyance
 - [ ] shape and positioning
 - [ ] documentation
+
+## Dependencies
+* jQuery
 
 ## Credits
 This project uses SVG icons from [leungwensen/svg-icon](https://github.com/leungwensen/svg-icon) thanks to the author / owner for providing.
