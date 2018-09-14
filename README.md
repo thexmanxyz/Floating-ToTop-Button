@@ -3,11 +3,14 @@ This is a simple jQuery plugin for a floating ToTop Button.
 
 ## Future Tasks
 - [x] create jQuery plugin
-- [ ] size modes
-- [ ] (custom) color palettes
-- [ ] svg icon switching
-- [ ] custom class applyance
-- [ ] shape and positioning
+- [x] size modes
+- [x] (custom) color palettes
+- [x] svg icon switching
+- [x] custom classes
+- [x] shape and positioning
+- [ ] black / white mode
+- [ ] fix broken icon margin
+- [ ] alpha shadow option
 - [ ] documentation
 
 ## Dependencies
