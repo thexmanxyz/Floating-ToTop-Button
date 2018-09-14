@@ -1,26 +1,15 @@
 a.to-top-button {
-	display:none;
-	position: fixed;
-	z-index: 9999;
-	color: #fff;
-	padding-top: 2px;
-	text-align: center;
-	font-size: 40px;
-	font-weight: 600;
-	background-color: rgb(97, 110, 131);
-	-webkit-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.6);
-	-moz-box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.6);
-	box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 9999;
+    color: #fff;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    background-color: rgb(97, 110, 131);
 }
 
-a.to-top-button:hover { background-color: rgb(118, 133, 158); }
-
-a.to-top-button .arrow-img{ vertical-align: top; margin: 4px 8px 8px 8px; }
-a.to-top-button .arrow-img.arrow-l-img{ margin: 0 5px 5px 5px; }
-a.to-top-button .arrow-img.arrow-circle-img{ margin: 6px 8px 8px 8px; }
-a.to-top-button .arrow-img.caret-img{ margin: 4px 10px 10px 10px; }
-a.to-top-button .arrow-img.circle-o-img{ margin: 6px 8px 8px 8px; }
-a.to-top-button .arrow-img.drop-img{ margin: -2px 0 0 0; }
+a.to-top-button:hover { background-color: rgb(121, 121, 121); }
 
 a.to-top-button.sz-1{ width: 30px; height: 30px; }
 a.to-top-button.sz-2{ width: 40px; height: 40px; }
@@ -245,10 +234,15 @@ a.to-top-button.p-whitesmoke{ background-color: #F5F5F5; }
 a.to-top-button.p-yellow{ background-color: #FFFF00; }
 a.to-top-button.p-yellowgreen{ background-color: #9ACD32; }
 
-a.to-top-button.bo-0{ border: 0; }
-a.to-top-button.bo-1{ border: 1px solid #FFF; }
-a.to-top-button.bo-2{ border: 2px solid #FFF; }
-a.to-top-button.bo-3{ border: 3px solid #FFF; }
+a.to-top-button.bw-0w{ border: 0; }
+a.to-top-button.bw-1w{ border: 1px solid #FFF; }
+a.to-top-button.bw-2w{ border: 2px solid #FFF; }
+a.to-top-button.bw-3w{ border: 3px solid #FFF; }
+
+a.to-top-button.bw-0b{ border: 0; }
+a.to-top-button.bw-1b{ border: 1px solid #000; }
+a.to-top-button.bw-2b{ border: 2px solid #000; }
+a.to-top-button.bw-3b{ border: 3px solid #000; }
 
 a.to-top-button.sh-0 { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
 a.to-top-button.sh-1 { -webkit-border-radius: 5%; -moz-border-radius: 5%; border-radius: 5%; }
@@ -262,8 +256,200 @@ a.to-top-button.sh-8 { -webkit-border-radius: 40%; -moz-border-radius: 40%; bord
 a.to-top-button.sh-9 { -webkit-border-radius: 45%; -moz-border-radius: 45%; border-radius: 45%; }
 a.to-top-button.sh-10 { -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
 
+a.to-top-button.bs-1 {
+    -webkit-box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+a.to-top-button.bs-2 {
+    -webkit-box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.6);
+}
+
+a.to-top-button.bs-3 {
+    -webkit-box-shadow: 0 0 4px -1px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 4px -1px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 4px -1px rgba(0, 0, 0, 0.8);
+}
+
+a.to-top-button.bs-4 {
+    -webkit-box-shadow:  0 0 4px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow:  0 0 4px 0 rgba(0, 0, 0, 1);
+    box-shadow:  0 0 4px 0 rgba(0, 0, 0, 1);
+}
+
+a.to-top-button.bs-5 {
+    -webkit-box-shadow:  0 0 4px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow:  0 0 4px 0 rgba(0, 0, 0, 1);
+    box-shadow:  0 0 4px 0 rgba(0, 0, 0, 1);
+}
+
+a.to-top-button.sz-1 .arrow-img{ vertical-align: top; margin: 1px 15% }
+a.to-top-button.sz-1 .arrow-img.drop-img{ margin: -2px 0%; }
+a.to-top-button.sz-1 .arrow-img.arrow-l-img{ margin: -1px 10%; }
+a.to-top-button.sz-1 .arrow-img.caret-img{ margin: 1px 18% }
+a.to-top-button.sz-1 .arrow-img.arrow-circle-img,
+a.to-top-button.sz-1 .arrow-img.circle-o-img{ margin: 2px 15% }
+a.to-top-button.sz-1 .arrow-img.caret-circle-img,
+a.to-top-button.sz-1 .arrow-img.circle-img,
+a.to-top-button.sz-1 .arrow-img.rise-img,
+a.to-top-button.sz-1 .arrow-img.top-img{ margin: 1px 15% }
+
+a.to-top-button.sz-2 .arrow-img{ vertical-align: top; margin: 2px 15% }
+a.to-top-button.sz-2 .arrow-img.drop-img{ margin: -3px 0%; }
+a.to-top-button.sz-2 .arrow-img.arrow-l-img{ margin: -1px 10%; }
+a.to-top-button.sz-2 .arrow-img.caret-img{ margin: 2px 18% }
+a.to-top-button.sz-2 .arrow-img.arrow-circle-img,
+a.to-top-button.sz-2 .arrow-img.circle-o-img{ margin: 3px 15% }
+a.to-top-button.sz-2 .arrow-img.caret-circle-img,
+a.to-top-button.sz-2 .arrow-img.circle-img,
+a.to-top-button.sz-2 .arrow-img.rise-img,
+a.to-top-button.sz-2 .arrow-img.top-img{ margin: 2px 15% }
+
+a.to-top-button.sz-3 .arrow-img{ vertical-align: top; margin: 3px 15% }
+a.to-top-button.sz-3 .arrow-img.drop-img{ margin: -2px 0%; }
+a.to-top-button.sz-3 .arrow-img.arrow-l-img{ margin: -1px 10%; }
+a.to-top-button.sz-3 .arrow-img.caret-img{ margin: 3px 18% }
+a.to-top-button.sz-3 .arrow-img.arrow-circle-img,
+a.to-top-button.sz-3 .arrow-img.circle-o-img{ margin: 5px 15% }
+a.to-top-button.sz-3 .arrow-img.caret-circle-img,
+a.to-top-button.sz-3 .arrow-img.circle-img,
+a.to-top-button.sz-3 .arrow-img.rise-img,
+a.to-top-button.sz-3 .arrow-img.top-img{ margin: 3px 15% }
+
+a.to-top-button.sz-4 .arrow-img{ vertical-align: top; margin: 4px 15% }
+a.to-top-button.sz-4 .arrow-img.drop-img{ margin: -2px 0%; }
+a.to-top-button.sz-4 .arrow-img.arrow-l-img{ margin: 0 10%; }
+a.to-top-button.sz-4 .arrow-img.caret-img{ margin: 4px 18% }
+a.to-top-button.sz-4 .arrow-img.arrow-circle-img,
+a.to-top-button.sz-4 .arrow-img.circle-o-img{ margin: 6px 15% }
+a.to-top-button.sz-4 .arrow-img.caret-circle-img,
+a.to-top-button.sz-4 .arrow-img.circle-img,
+a.to-top-button.sz-4 .arrow-img.rise-img,
+a.to-top-button.sz-4 .arrow-img.top-img{ margin: 4px 15% }
+
+a.to-top-button.sz-5 .arrow-img{ vertical-align: top; margin: 5px 15% }
+a.to-top-button.sz-5 .arrow-img.drop-img{ margin: -3px 0%; }
+a.to-top-button.sz-5 .arrow-img.arrow-l-img{ margin: 1px 10%; }
+a.to-top-button.sz-5 .arrow-img.caret-img{ margin: 5px 18% }
+a.to-top-button.sz-5 .arrow-img.arrow-circle-img,
+a.to-top-button.sz-5 .arrow-img.circle-o-img{ margin: 7px 15% }
+a.to-top-button.sz-5 .arrow-img.caret-circle-img,
+a.to-top-button.sz-5 .arrow-img.circle-img,
+a.to-top-button.sz-5 .arrow-img.rise-img,
+a.to-top-button.sz-5 .arrow-img.top-img{ margin: 4px 15% }
+
+a.to-top-button.sz-6 .arrow-img{ vertical-align: top; margin: 6px 15% }
+a.to-top-button.sz-6 .arrow-img.drop-img{ margin: -4px 0%; }
+a.to-top-button.sz-6 .arrow-img.arrow-l-img{ margin: 1px 10%; }
+a.to-top-button.sz-6 .arrow-img.caret-img{ margin: 6px 18% }
+a.to-top-button.sz-6 .arrow-img.arrow-circle-img,
+a.to-top-button.sz-6 .arrow-img.circle-o-img{ margin: 8px 15% }
+a.to-top-button.sz-6 .arrow-img.caret-circle-img,
+a.to-top-button.sz-6 .arrow-img.circle-img,
+a.to-top-button.sz-6 .arrow-img.rise-img,
+a.to-top-button.sz-6 .arrow-img.top-img{ margin: 6px 15% }
+
+a.to-top-button .arrow-img.as-0{
+    -webkit-filter: drop-shadow(2px 2px 2px #000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#000')";
+    filter: drop-shadow(2px 2px 2px #000);
+}
+
+a.to-top-button .arrow-img.as-1{
+    -webkit-filter: drop-shadow(2px 2px 2px #111);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#111')";
+    filter: drop-shadow(2px 2px 2px #111);
+}
+
+a.to-top-button .arrow-img.as-2{
+    -webkit-filter: drop-shadow(2px 2px 2px #222);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#222')";
+    filter: drop-shadow(2px 2px 2px #222);
+}
+
+a.to-top-button .arrow-img.as-3{
+    -webkit-filter: drop-shadow(2px 2px 2px #333);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#333')";
+    filter: drop-shadow(2px 2px 2px #333);
+}
+
+a.to-top-button .arrow-img.as-4{
+    -webkit-filter: drop-shadow(2px 2px 2px #444);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#444')";
+    filter: drop-shadow(2px 2px 2px #444);
+}
+
+a.to-top-button .arrow-img.as-5{
+    -webkit-filter: drop-shadow(2px 2px 2px #555);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#555')";
+    filter: drop-shadow(2px 2px 2px #555);
+}
+
+a.to-top-button .arrow-img.as-6{
+    -webkit-filter: drop-shadow(2px 2px 2px #666);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#666')";
+    filter: drop-shadow(2px 2px 2px #666);
+}
+
+a.to-top-button .arrow-img.as-7{
+    -webkit-filter: drop-shadow(2px 2px 2px #777);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#777')";
+    filter: drop-shadow(2px 2px 2px #777);
+}
+
+a.to-top-button .arrow-img.as-8{
+    -webkit-filter: drop-shadow(2px 2px 2px #888);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#888')";
+    filter: drop-shadow(2px 2px 2px #888);
+}
+
+a.to-top-button .arrow-img.as-9{
+    -webkit-filter: drop-shadow(2px 2px 2px #999);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#999')";
+    filter: drop-shadow(2px 2px 2px #999);
+}
+
+a.to-top-button .arrow-img.as-10{
+    -webkit-filter: drop-shadow(2px 2px 2px #AAA);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#AAA')";
+    filter: drop-shadow(2px 2px 2px #AAA);
+}
+
+a.to-top-button .arrow-img.as-11{
+    -webkit-filter: drop-shadow(2px 2px 2px #BBB);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#BBB')";
+    filter: drop-shadow(2px 2px 2px #BBB);
+}
+
+a.to-top-button .arrow-img.as-12{
+    -webkit-filter: drop-shadow(2px 2px 2px #CCC);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#CCC')";
+    filter: drop-shadow(2px 2px 2px #CCC);
+}
+
+a.to-top-button .arrow-img.as-13{
+    -webkit-filter: drop-shadow(2px 2px 2px #DDD);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#DDD')";
+    filter: drop-shadow(2px 2px 2px #DDD);
+}
+
+a.to-top-button .arrow-img.as-14{
+    -webkit-filter: drop-shadow(2px 2px 2px #EEE);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#EEE')";
+    filter: drop-shadow(2px 2px 2px #EEE);
+}
+
+a.to-top-button .arrow-img.as-15{
+    -webkit-filter: drop-shadow(2px 2px 2px #FFF);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#FFF')";
+    filter: drop-shadow(2px 2px 2px #FFF);
+}
+
 @media (max-width: 768px) {
-	a.to-top-button {
-		display: none !important;
-	}
+    a.to-top-button {
+        display: none !important;
+    }
 }
