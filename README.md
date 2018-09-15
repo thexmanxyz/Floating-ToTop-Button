@@ -132,6 +132,22 @@ a.to-top-button .arrow-img.is-16{ filter: drop-shadow(10px 10px 10px #EEE); ... 
 a.to-top-button.bs-6 { box-shadow:  3px 3px 4px 0 rgba(0, 0, 0, 1); ... }
 ```
 
+## Showroom
+Basic examples of the *Floating To Top Button* in action:
+
+
+**Button (1)** - *[Button 1)](/screenshots/button-1.png)*
+
+![1](/screenshots/button-1.png)
+
+**Button (2)** - *[Button 2)](/screenshots/button-2.png)*
+
+![2](/screenshots/button-2.png)
+
+**Button (3)** - *[Button 3](/button-3.png)*
+
+![3](/screenshots/button-3.png)
+
 ## Future Tasks
 - [~] Screenshots
 - [ ] auto switch to footer on mobile 
