@@ -7,11 +7,11 @@
         return opts.mobileHide == 0 || $(window).width() >= opts.mobileHide;
     }
     
-	// helper function to determine scroll visibility
-	function showTrigger(opts){
-		return $(window).scrollTop() >= opts.scrollTrigger
-	}
-		
+    // helper function to determine scroll visibility
+    function showTrigger(opts){
+        return $(window).scrollTop() >= opts.scrollTrigger
+    }
+        
     // append callback click events
     function addClickEvents(opts){
         var selector = opts.clickSelectors.join(',');
@@ -111,7 +111,7 @@
         appendButton(this, opts);
         addScrollEvent(opts);
         addClickEvents(opts);
-		addResizeEvent(opts);
+        addResizeEvent(opts);
     };
     
     
@@ -193,7 +193,7 @@
             }
         },
         
-		// resize hide method - can be user customized
+        // resize hide method - can be user customized
         resizeHide: function(opts) {
             if(showMobile(opts) && showTrigger(opts))
                 $('.' + btnClass).css('display', 'inline');
