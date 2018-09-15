@@ -37,7 +37,7 @@ The plugin can be easily configured during the initialization and the following 
 - `fadeOutSpeed: 'fast',` | Time for fade out, `'fast'`, `'slow'` or a numerical value e.g. `200`.
 - `iconShadow: 4,` | Icon shadow values range from `1-16` for different stylings.
 - `btnShadow: 2,` | Button shadow values range from `1-5` for different stylings.
-- `mobileHide: 0,` | If the value is 0 then the button will always be shown otherwise the button will only be visible if the window width exceeds the specified pixel value.
+- `mobileHide: 768,` | If the value is 0 then the button will always be shown otherwise the button will only be visible if the window width exceeds the specified pixel value.
 - `autoHide: true,` | If enabled, the button will automatically hide depending on the `scrollTrigger` value.
 - `filter: true,` | Defines whether a CSS filter should be used instead of the default color rollover (be aware of browser support).
 - `linkClasses: [],` | Array of link classes in the form `['a','b','c']`.
