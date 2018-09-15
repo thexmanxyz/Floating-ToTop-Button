@@ -26,8 +26,7 @@
     
     // append resize hide event
     function addResizeEvent(opts){
-        $(window).resize(opts.resizeHide.bind(opts, opts));
-        
+        $(window).resize(opts.resizeHide.bind(opts, opts));   
     }
     
     // add button to DOM
