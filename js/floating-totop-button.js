@@ -8,7 +8,7 @@
     }
     
     // helper function to determine scroll visibility
-    function showTrigger(opts){
+    function showScroll(opts){
         return $(window).scrollTop() >= opts.scrollTrigger
     }
         
@@ -182,7 +182,7 @@
         fadeScroll: function(opts) {
             var btn = $('a.' + btnClass);
             if(opts.autoHide && showMobile(opts)){
-                if(showTrigger(opts)) {
+                if(showScroll(opts)) {
                     if(!$(btn).is(':visible'))
                         $(btn).fadeIn(opts.fadeInSpeed);
                 }else{
@@ -194,7 +194,7 @@
         
         // resize hide method - can be user customized
         resizeHide: function(opts) {
-            if(showMobile(opts) && showTrigger(opts))
+            if(showMobile(opts) && showScroll(opts))
                 $('.' + btnClass).css('display', 'inline');
             else
                 $('.' + btnClass).css('display', 'none');
