@@ -6,7 +6,7 @@ This is a simple and full configurable jQuery plugin which appends a floating *T
 * jQuery core library
 
 ## Download / Installation
-1. Download v1.0.0 of the Floating ToTop Button
+1. [Download v1.0.0](https://github.com/thexmanxyz/Floating-ToTop-Button/archive/v1.0.0.zip) of the Floating ToTop Button
 2. Extract the files and copy them to your website folder
 3. Define the CSS and JS resource files in your HTML page. You can  also place the `<script>` tag after your `<body>` content. Basic resource import example:
    * **CSS:** `<link href="css/floating-totop-button.min.css" rel="stylesheet">`
