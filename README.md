@@ -9,9 +9,8 @@ This is a simple and full configurable jQuery plugin which appends a floating *T
 1. Download v1.0.0 of the Floating ToTop Button
 2. Extract the files and copy them to your website folder
 3. Define the CSS and JS resource files in your HTML page. You can  also place the `<script>` tag after your `<body>` content. Basic resource import example:
-   * **CSS:** `<link href="css/custom.min.css" rel="stylesheet">`
+   * **CSS:** `<link href="css/floating-totop-button.min.css" rel="stylesheet">`
    * **JS:** `<script src="js/floating-totop-button.min.js"></script>`
-   *
 4. Initialize the plugin with basic values as follows
    * **Plugin Creation:** `$("body").toTopButton({});`
 5. If you want to further customize the appearance or behavior please take a closer look on the plugin parameters and their explanation listed the next section.
