@@ -133,10 +133,9 @@ a.to-top-button.bs-6 { box-shadow:  3px 3px 4px 0 rgba(0, 0, 0, 1); ... }
 ```
 
 ## Future Tasks
-- [x] parameter documentation
-- [x] CSS / JS documentation
-- [ ] Screenshots
-- [ ] better plugin customization
+- [~] Screenshots
+- [ ] auto switch to footer on mobile 
+- [ ] more customization options
 
 ## Known Issues
 None

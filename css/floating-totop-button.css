@@ -296,66 +296,66 @@ a.to-top-button.sz-1 .arrow-img.drop-img{ margin: -2px 0%; }
 a.to-top-button.sz-1 .arrow-img.arrow-l-img{ margin: -1px 10%; }
 a.to-top-button.sz-1 .arrow-img.caret-img{ margin: 1px 18% }
 a.to-top-button.sz-1 .arrow-img.arrow-circle-img,
-a.to-top-button.sz-1 .arrow-img.circle-o-img{ margin: 2px 15% }
 a.to-top-button.sz-1 .arrow-img.caret-circle-img,
 a.to-top-button.sz-1 .arrow-img.circle-img,
-a.to-top-button.sz-1 .arrow-img.rise-img,
-a.to-top-button.sz-1 .arrow-img.top-img{ margin: 1px 15% }
+a.to-top-button.sz-1 .arrow-img.circle-o-img{ margin: 2px 15% }
+a.to-top-button.sz-1 .arrow-img.rise-img{ margin: 1px 15% }
+a.to-top-button.sz-1 .arrow-img.top-img{ margin: 2px 15% }
 
 a.to-top-button.sz-2 .arrow-img{ vertical-align: top; margin: 2px 15% }
-a.to-top-button.sz-2 .arrow-img.drop-img{ margin: -3px 0%; }
+a.to-top-button.sz-2 .arrow-img.drop-img{ margin: -2px 0%; }
 a.to-top-button.sz-2 .arrow-img.arrow-l-img{ margin: -1px 10%; }
 a.to-top-button.sz-2 .arrow-img.caret-img{ margin: 2px 18% }
-a.to-top-button.sz-2 .arrow-img.arrow-circle-img,
-a.to-top-button.sz-2 .arrow-img.circle-o-img{ margin: 3px 15% }
+a.to-top-button.sz-2 .arrow-img.arrow-circle-img { margin: 4px 15% }
 a.to-top-button.sz-2 .arrow-img.caret-circle-img,
-a.to-top-button.sz-2 .arrow-img.circle-img,
-a.to-top-button.sz-2 .arrow-img.rise-img,
-a.to-top-button.sz-2 .arrow-img.top-img{ margin: 2px 15% }
+a.to-top-button.sz-2 .arrow-img.circle-img { margin: 3px 15% }
+a.to-top-button.sz-2 .arrow-img.circle-o-img{ margin: 4px 15% }
+a.to-top-button.sz-2 .arrow-img.rise-img{ margin: 2px 15% }
+a.to-top-button.sz-2 .arrow-img.top-img{ margin: 3px 15% }
 
 a.to-top-button.sz-3 .arrow-img{ vertical-align: top; margin: 3px 15% }
 a.to-top-button.sz-3 .arrow-img.drop-img{ margin: -2px 0%; }
 a.to-top-button.sz-3 .arrow-img.arrow-l-img{ margin: -1px 10%; }
 a.to-top-button.sz-3 .arrow-img.caret-img{ margin: 3px 18% }
 a.to-top-button.sz-3 .arrow-img.arrow-circle-img,
-a.to-top-button.sz-3 .arrow-img.circle-o-img{ margin: 5px 15% }
 a.to-top-button.sz-3 .arrow-img.caret-circle-img,
-a.to-top-button.sz-3 .arrow-img.circle-img,
-a.to-top-button.sz-3 .arrow-img.rise-img,
-a.to-top-button.sz-3 .arrow-img.top-img{ margin: 3px 15% }
+a.to-top-button.sz-3 .arrow-img.circle-img{ margin: 5px 15% }
+a.to-top-button.sz-3 .arrow-img.circle-o-img{ margin: 6px 15% }
+a.to-top-button.sz-3 .arrow-img.rise-img{ margin: 3px 15% }
+a.to-top-button.sz-3 .arrow-img.top-img{ margin: 4px 15% }
 
 a.to-top-button.sz-4 .arrow-img{ vertical-align: top; margin: 4px 15% }
 a.to-top-button.sz-4 .arrow-img.drop-img{ margin: -2px 0%; }
 a.to-top-button.sz-4 .arrow-img.arrow-l-img{ margin: 0 10%; }
 a.to-top-button.sz-4 .arrow-img.caret-img{ margin: 4px 18% }
-a.to-top-button.sz-4 .arrow-img.arrow-circle-img,
-a.to-top-button.sz-4 .arrow-img.circle-o-img{ margin: 6px 15% }
+a.to-top-button.sz-4 .arrow-img.arrow-circle-img { margin: 7px 15% }
 a.to-top-button.sz-4 .arrow-img.caret-circle-img,
-a.to-top-button.sz-4 .arrow-img.circle-img,
-a.to-top-button.sz-4 .arrow-img.rise-img,
-a.to-top-button.sz-4 .arrow-img.top-img{ margin: 4px 15% }
+a.to-top-button.sz-4 .arrow-img.circle-img{ margin: 6px 15% }
+a.to-top-button.sz-4 .arrow-img.circle-o-img{ margin: 7px 15% }
+a.to-top-button.sz-4 .arrow-img.rise-img{ margin: 4px 15% }
+a.to-top-button.sz-4 .arrow-img.top-img{ margin: 5px 15% }
 
 a.to-top-button.sz-5 .arrow-img{ vertical-align: top; margin: 5px 15% }
 a.to-top-button.sz-5 .arrow-img.drop-img{ margin: -3px 0%; }
 a.to-top-button.sz-5 .arrow-img.arrow-l-img{ margin: 1px 10%; }
 a.to-top-button.sz-5 .arrow-img.caret-img{ margin: 5px 18% }
-a.to-top-button.sz-5 .arrow-img.arrow-circle-img,
-a.to-top-button.sz-5 .arrow-img.circle-o-img{ margin: 7px 15% }
+a.to-top-button.sz-5 .arrow-img.arrow-circle-img{ margin: 8px 15% }
 a.to-top-button.sz-5 .arrow-img.caret-circle-img,
-a.to-top-button.sz-5 .arrow-img.circle-img,
-a.to-top-button.sz-5 .arrow-img.rise-img,
-a.to-top-button.sz-5 .arrow-img.top-img{ margin: 4px 15% }
+a.to-top-button.sz-5 .arrow-img.circle-img{ margin: 7px 15% }
+a.to-top-button.sz-5 .arrow-img.circle-o-img{ margin: 8px 15% }
+a.to-top-button.sz-5 .arrow-img.rise-img{ margin: 4px 15% }
+a.to-top-button.sz-5 .arrow-img.top-img{ margin: 5px 15% }
 
 a.to-top-button.sz-6 .arrow-img{ vertical-align: top; margin: 6px 15% }
 a.to-top-button.sz-6 .arrow-img.drop-img{ margin: -4px 0%; }
 a.to-top-button.sz-6 .arrow-img.arrow-l-img{ margin: 1px 10%; }
 a.to-top-button.sz-6 .arrow-img.caret-img{ margin: 6px 18% }
-a.to-top-button.sz-6 .arrow-img.arrow-circle-img,
-a.to-top-button.sz-6 .arrow-img.circle-o-img{ margin: 8px 15% }
+a.to-top-button.sz-6 .arrow-img.arrow-circle-img{ margin: 9px 15% }
 a.to-top-button.sz-6 .arrow-img.caret-circle-img,
-a.to-top-button.sz-6 .arrow-img.circle-img,
-a.to-top-button.sz-6 .arrow-img.rise-img,
-a.to-top-button.sz-6 .arrow-img.top-img{ margin: 6px 15% }
+a.to-top-button.sz-6 .arrow-img.circle-img{ margin: 8px 15% }
+a.to-top-button.sz-6 .arrow-img.circle-o-img{ margin: 9px 15% }
+a.to-top-button.sz-6 .arrow-img.rise-img{ margin: 6px 15% }
+a.to-top-button.sz-6 .arrow-img.top-img{ margin: 7px 15% }
 
 a.to-top-button .arrow-img.is-0{
     -webkit-filter: drop-shadow(2px 2px 2px #000);
