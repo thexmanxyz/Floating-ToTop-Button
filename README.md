@@ -1,8 +1,8 @@
 # Floating ToTop Button
-This is a simple and full configurable jQuery plugin which appends a floating *To Top* - Button to a DOM element. On the following website, [gantryprojects](https://gantryprojects.com), you can see the button and it's behavior in action. I you want to try it yourself, simply download the latest version and follow the installation guide below.
+This is a simple and full configurable jQuery plugin which appends a floating *To Top* - Button to a DOM element. On the following website, [gantryprojects](https://gantryprojects.com), you can see the button and it's behavior in action. If you want to try it yourself, simply download the latest version and follow the installation guide below.
 
 ## Prerequisites
-* Basic web development knowledge
+* Basic web frontend knowledge
 
 ## Download / Installation
 TBA
@@ -30,7 +30,7 @@ None
 * [jQuery](https://jquery.com/)
 
 ## Credits
-This project uses SVG icons from [leungwensen/svg-icon](https://github.com/leungwensen/svg-icon) thanks to the author / owner for providing.
+This project uses SVG icons from [leungwensen/svg-icon](https://github.com/leungwensen/svg-icon). Many thanks to the author / owner for providing this great collection.
 
 ## by [thex](https://github.com/thexmanxyz)
 Copyright (c) 2018, free to use in personal and commercial software as per the [license](/LICENSE.md).
