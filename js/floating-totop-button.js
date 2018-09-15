@@ -2,6 +2,16 @@
     var btnClass = 'to-top-button';
     var imgClass = 'arrow-img';
     
+    // helper function to determine mobile visibility
+    function showMobile(opts){
+        return opts.mobileHide == 0 || $(window).width() >= opts.mobileHide;
+    }
+    
+	// helper function to determine scroll visibility
+	function showTrigger(opts){
+		return $(window).scrollTop() >= opts.scrollTrigger
+	}
+		
     // append callback click events
     function addClickEvents(opts){
         var selector = opts.clickSelectors.join(',');
@@ -12,6 +22,12 @@
     // append callback scroll event
     function addScrollEvent(opts){
         $(window).scroll(opts.fadeScroll.bind(opts, opts));
+    }
+    
+    // append resize hide event
+    function addResizeEvent(opts){
+        $(window).resize(opts.resizeHide.bind(opts, opts));
+        
     }
     
     // add button to DOM
@@ -66,10 +82,11 @@
             filterClass = ' filter';
             
         // build styles 
-        if(opts.border.color != '' || opts.backgroundColor != ''){
+        if(opts.border.color != '' || opts.backgroundColor != '' || !showMobile(opts)){
             var boColor = 'border-color:' + opts.border.color;
             var bgColor = 'background-color:' + opts.backgroundColor;
-            linkStyle = ' style="' + bgColor + ';' + boColor + '"';
+            var display = !showMobile(opts) ? 'display:none' : '';
+            linkStyle = ' style="' + bgColor + ';' + boColor + ';' + display + '"';
         }
         
         // build custom classes 
@@ -94,6 +111,7 @@
         appendButton(this, opts);
         addScrollEvent(opts);
         addClickEvents(opts);
+		addResizeEvent(opts);
     };
     
     
@@ -117,6 +135,7 @@
     * fadeOutSpeed: Time for fade out, "fast", "slow" or a numerical value e.g. 200.
     * iconShadow: Icon shadow values range from 1-16 for different stylings.
     * btnShadow: Button shadow values range from 1-5 for different stylings.
+    * mobileHide: If the value is 0 then the button will always be shown otherwise the button will only be visible if the window width exceeds the specified pixel value.
     * autoHide: If enabled, the button will automatically hide depending on the scrollTrigger value.  
     * filter: Defines whether a CSS filter should be used instead of the default color rollover (be aware of browser support).
     * linkClasses: Array of link classes in the form ['a','b','c'].
@@ -147,6 +166,7 @@
         fadeOutSpeed: 'fast',
         iconShadow: 4,
         btnShadow: 2,
+        mobileHide: 768,
         autoHide: true,
         filter: true,
         linkClasses: [],
@@ -162,8 +182,8 @@
         // fade scroll method - can be user customized
         fadeScroll: function(opts) {
             var btn = $('a.' + btnClass);
-            if(opts.autoHide){
-                if($(window).scrollTop() > opts.scrollTrigger) {
+            if(opts.autoHide && showMobile(opts)){
+                if(showTrigger(opts)) {
                     if(!$(btn).is(':visible'))
                         $(btn).fadeIn(opts.fadeInSpeed);
                 }else{
@@ -171,6 +191,14 @@
                         $(btn).fadeOut(opts.fadeOutSpeed);
                 }
             }
+        },
+        
+		// resize hide method - can be user customized
+        resizeHide: function(opts) {
+            if(showMobile(opts) && showTrigger(opts))
+                $('.' + btnClass).css('display', 'inline');
+            else
+                $('.' + btnClass).css('display', 'none');
         }
     };
  

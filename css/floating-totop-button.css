@@ -362,99 +362,78 @@ a.to-top-button .arrow-img.is-0{
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#000')";
     filter: drop-shadow(2px 2px 2px #000);
 }
-
 a.to-top-button .arrow-img.is-1{
     -webkit-filter: drop-shadow(2px 2px 2px #111);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#111')";
     filter: drop-shadow(2px 2px 2px #111);
 }
-
 a.to-top-button .arrow-img.is-2{
     -webkit-filter: drop-shadow(2px 2px 2px #222);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#222')";
     filter: drop-shadow(2px 2px 2px #222);
 }
-
 a.to-top-button .arrow-img.is-3{
     -webkit-filter: drop-shadow(2px 2px 2px #333);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#333')";
     filter: drop-shadow(2px 2px 2px #333);
 }
-
 a.to-top-button .arrow-img.is-4{
     -webkit-filter: drop-shadow(2px 2px 2px #444);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#444')";
     filter: drop-shadow(2px 2px 2px #444);
 }
-
 a.to-top-button .arrow-img.is-5{
     -webkit-filter: drop-shadow(2px 2px 2px #555);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#555')";
     filter: drop-shadow(2px 2px 2px #555);
 }
-
 a.to-top-button .arrow-img.is-6{
     -webkit-filter: drop-shadow(2px 2px 2px #666);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#666')";
     filter: drop-shadow(2px 2px 2px #666);
 }
-
 a.to-top-button .arrow-img.is-7{
     -webkit-filter: drop-shadow(2px 2px 2px #777);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#777')";
     filter: drop-shadow(2px 2px 2px #777);
 }
-
 a.to-top-button .arrow-img.is-8{
     -webkit-filter: drop-shadow(2px 2px 2px #888);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#888')";
     filter: drop-shadow(2px 2px 2px #888);
 }
-
 a.to-top-button .arrow-img.is-9{
     -webkit-filter: drop-shadow(2px 2px 2px #999);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#999')";
     filter: drop-shadow(2px 2px 2px #999);
 }
-
 a.to-top-button .arrow-img.is-10{
     -webkit-filter: drop-shadow(2px 2px 2px #AAA);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#AAA')";
     filter: drop-shadow(2px 2px 2px #AAA);
 }
-
 a.to-top-button .arrow-img.is-11{
     -webkit-filter: drop-shadow(2px 2px 2px #BBB);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#BBB')";
     filter: drop-shadow(2px 2px 2px #BBB);
 }
-
 a.to-top-button .arrow-img.is-12{
     -webkit-filter: drop-shadow(2px 2px 2px #CCC);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#CCC')";
     filter: drop-shadow(2px 2px 2px #CCC);
 }
-
 a.to-top-button .arrow-img.is-13{
     -webkit-filter: drop-shadow(2px 2px 2px #DDD);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#DDD')";
     filter: drop-shadow(2px 2px 2px #DDD);
 }
-
 a.to-top-button .arrow-img.is-14{
     -webkit-filter: drop-shadow(2px 2px 2px #EEE);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#EEE')";
     filter: drop-shadow(2px 2px 2px #EEE);
 }
-
 a.to-top-button .arrow-img.is-15{
     -webkit-filter: drop-shadow(2px 2px 2px #FFF);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#FFF')";
     filter: drop-shadow(2px 2px 2px #FFF);
-}
-
-@media (max-width: 768px) {
-    a.to-top-button {
-        display: none !important;
-    }
 }
