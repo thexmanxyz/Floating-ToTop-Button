@@ -149,7 +149,6 @@ Basic examples of the *Floating To Top Button* in action:
 ![3](/screenshots/button-3.png)
 
 ## Future Tasks
-- [~] Screenshots
 - [ ] auto switch to footer on mobile 
 - [ ] more customization options
 
