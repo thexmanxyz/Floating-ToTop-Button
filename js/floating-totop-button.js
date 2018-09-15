@@ -176,5 +176,5 @@
  
 })( jQuery );
 
-// attach plugin to body
-$("body").toTopButton({clickSelectors: ['a.to-top-btm-button']});
+// attach plugin to body, basic example
+// $("body").toTopButton({});
