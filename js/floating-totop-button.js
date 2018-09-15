@@ -16,15 +16,17 @@
     
     // add button to DOM
     function appendButton(that, opts){
-        var opClass = 'op-' + opts.opacity;
-        var shClass = 'sh-' + opts.shape;
-        var bpClass = 'bp-' + opts.position;
-        var bmClass = 'bm-' + opts.margin;
-        var szClass = 'sz-' + opts.size;
-        var bwClass = 'bw-' + opts.border.width;
+        var opClass = ' op-' + opts.opacity;
+        var shClass = ' sh-' + opts.shape;
+        var bpClass = ' bp-' + opts.position;
+        var bmClass = ' bm-' + opts.margin;
+        var szClass = ' sz-' + opts.size;
+        var bwClass = ' bw-' + opts.border.width;
+        var filterClass = '';
+        var hideClass = '';
         var isClass = '';
         var bsClass = '';
-        var pClass = ''
+        var pClass = '';
         
         var imgCClasses = opts.imgClasses.join(' ');
         var linkCClasses = opts.linkClasses.join(' ');
@@ -46,14 +48,22 @@
         
         // shadows
         if(opts.iconShadow != '')
-            isClass = 'as-' + opts.iconShadow;
+            isClass = ' is-' + opts.iconShadow ;
         
         if(opts.btnShadow != '')
-            bsClass = 'bs-' + opts.btnShadow;
+            bsClass = ' bs-' + opts.btnShadow;
         
         // palette
         if(opts.palette != '')
-            pClass = 'p-' + opts.palette.toLowerCase();
+            pClass = ' p-' + opts.palette.toLowerCase();
+        
+        // auto hide
+        if(opts.autoHide)
+            hideClass = ' hide';
+        
+        // filter
+        if(opts.filter)
+            filterClass = ' filter';
             
         // build styles 
         if(opts.border.color != '' || opts.backgroundColor != ''){
@@ -67,12 +77,14 @@
         linkCClasses = linkCClasses.length > 0 ? linkCClasses + ' ' : linkCClasses;
         
         // build link and image classes
-        linkClasses = btnClass + ' ' + opClass + ' ' + shClass + ' ' + bpClass + ' ' + bmClass + ' ' 
-            + pClass + ' ' + szClass + ' ' + bwClass + ' ' + bsClass + linkCClasses;
-        imgClasses = imgClass + ' ' + isClass + ' ' + opts.arrowType + '-img' + imgCClasses;
+        linkClasses = btnClass + opClass + shClass + bpClass +  bmClass + pClass + szClass 
+                    + bwClass + bsClass + hideClass + filterClass + linkCClasses;
+                    
+        imgClasses = imgClass + isClass + ' ' + opts.arrowType + '-img' + imgCClasses;
         
         // append to DOM
-        $(that).prepend('<a href="#" class="' + linkClasses + '"' + linkStyle + '><img src="' + imgPath + '" class="' + imgClasses + '"></a>');
+        $(that).prepend('<a href="#" class="' + linkClasses + '"' + linkStyle 
+                        + '><img src="' + imgPath + '" class="' + imgClasses + '"></a>');
     }
     
     // append button and create events
@@ -106,6 +118,7 @@
     * iconShadow: values 1-16 for different stylings
     * btnShadow: values 1-5 for different stylings
     * autoHide: if enabled the button will automatically hide depending on the scrollTrigger
+    * filter: defines whether CSS filter should be used instead of the default color rollover (be aware of browser support)
     * linkClasses: array of link classes
     * imgClasses: array of image classes
     * clickSelectors: additional selectors for the click event
@@ -125,7 +138,7 @@
         iconColor: 'w',
         backgroundColor: '',
         border : { 
-            width: 3,
+            width: 0,
             color: ''
         },
         position: 'br',
@@ -135,6 +148,7 @@
         iconShadow: 4,
         btnShadow: 2,
         autoHide: true,
+        filter: true,
         linkClasses: [],
         imgClasses: [],
         clickSelectors: [],
