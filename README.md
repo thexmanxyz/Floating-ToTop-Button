@@ -136,17 +136,17 @@ a.to-top-button.bs-6 { box-shadow:  3px 3px 4px 0 rgba(0, 0, 0, 1); ... }
 Basic examples of the *Floating To Top Button* in action:
 
 
-**Button (1)** - *[Button 1)](/screenshots/button-1.png)*
+**Button** - *[Styling 1](/screenshots/button-1.jpg)*
 
-![1](/screenshots/button-1.png)
+![1](/screenshots/button-1.jpg)
 
-**Button (2)** - *[Button 2)](/screenshots/button-2.png)*
+**Button** - *[Styling 2](/screenshots/button-2.jpg)*
 
-![2](/screenshots/button-2.png)
+![2](/screenshots/button-2.jpg)
 
-**Button (3)** - *[Button 3](/button-3.png)*
+**Button** - *[Styling 3](/button-3.jpg)*
 
-![3](/screenshots/button-3.png)
+![3](/screenshots/button-3.jpg)
 
 ## Future Tasks
 - [ ] auto switch to footer on mobile 
