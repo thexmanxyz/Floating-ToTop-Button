@@ -51,7 +51,7 @@ The plugin can be easily configured during the initialization and the following 
 The following example shows how you can specify plugin parameters to change the default icon, set the opacity to `0.5` and increases the button dimension to `80px`.
 
 ```Javascript
-$("body").toTopButton({arrowType: 'circle', opacity: 10, size: 6})
+$("body").toTopButton({arrowType: 'circle', opacity: 10, size: 6});
 ``` 
 
 ## CSS Customization
