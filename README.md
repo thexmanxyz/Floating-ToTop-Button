@@ -50,7 +50,7 @@ The plugin can be easily configured during the initialization and the following 
 
 The following example shows how you can specify plugin parameters to change the default icon, set the opacity to `0.5` and increases the button dimension to `80px`.
 
-```
+```Javascript
 $("body").toTopButton({arrowType: 'circle', opacity: 10, size: 6})
 ``` 
 
@@ -60,14 +60,14 @@ For most of the plugins basic CSS styling options there exists a way to create y
 ### Opacity
 Set the `opacity` parameter as follows `opacity: 21` and create the following CSS selector:
 
-```
+```CSS
 a.to-top-button.op-21{ opacity: 0.98; }
 ```
 
 ### Shape
 Set the `shape` parameter as follows `shape: 11` and create the following CSS selector:
 
-```
+```CSS
 a.to-top-button.sh-11 { border-radius: 2%; ... }
 ```
 
@@ -75,19 +75,19 @@ a.to-top-button.sh-11 { border-radius: 2%; ... }
 
 Set the `margin` parameter as follows `margin: 11` and create the following CSS selectors:
 
-```
+```CSS
 a.to-top-button.bp-tl.bm-11{ top: 150px; left: 150px; }
 ```
 
-```
+```CSS
 a.to-top-button.bp-tr.bm-11{ top: 150px; right: 150px; }
 ```
 
-```
+```CSS
 a.to-top-button.bp-bl.bm-11{ bottom: 150px; left: 150px; }
 ```
 
-```
+```CSS
 a.to-top-button.bp-br.bm-11{ bottom: 150px; right: 150px; }
 ```
 
@@ -97,13 +97,13 @@ Set the `border.width` parameter as follows `border: 4` and create the following
 
 **white mode:**
 
-```
+```CSS
 a.to-top-button.bw-4w{ border: 4px solid #FFF; }
 ```
 
 **black mode:**
 
-```
+```CSS
 a.to-top-button.bw-4b{ border: 4px solid #000; }
 ```
 
@@ -111,7 +111,7 @@ a.to-top-button.bw-4b{ border: 4px solid #000; }
 
 Set the `size` parameter as follows `size: 7` and create the following CSS selectors:
 
-```
+```CSS
 a.to-top-button.sz-7{ width: 100px; height: 100px; }
 ```
 
@@ -122,13 +122,13 @@ Set the `iconShadow` and `btnShadow` parameters as follows `iconShadow: 16` | `b
 
 **Icon Shadow:**
 
-```
+```CSS
 a.to-top-button .arrow-img.is-16{ filter: drop-shadow(10px 10px 10px #EEE); ... }
 ```
 
 **Button Shadow:**
 
-```
+```CSS
 a.to-top-button.bs-6 { box-shadow:  3px 3px 4px 0 rgba(0, 0, 0, 1); ... }
 ```
 
