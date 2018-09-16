@@ -58,14 +58,14 @@ $("body").toTopButton({arrowType: 'circle', opacity: 10, size: 6})
 For most of the plugins basic CSS styling options there exists a way to create your own selector and simply pass it as a new identifier to the plugin so that it will be used during the plugin initialization. This sounds a bit abstract so the following examples should help to understand the attachment of CSS customizations.
 
 ### Opacity
-Set the `opacity` parameter as follows `opacity: 21` and create the following CSS selector:
+Set the `opacity` parameter as follows - `opacity: 21` - and create the following CSS selector:
 
 ```CSS
 a.to-top-button.op-21{ opacity: 0.98; }
 ```
 
 ### Shape
-Set the `shape` parameter as follows `shape: 11` and create the following CSS selector:
+Set the `shape` parameter as follows - `shape: 11` - and create the following CSS selector:
 
 ```CSS
 a.to-top-button.sh-11 { border-radius: 2%; ... }
@@ -73,7 +73,7 @@ a.to-top-button.sh-11 { border-radius: 2%; ... }
 
 ### Margin
 
-Set the `margin` parameter as follows `margin: 11` and create the following CSS selectors:
+Set the `margin` parameter as follows - `margin: 11` - and create the following CSS selectors:
 
 ```CSS
 a.to-top-button.bp-tl.bm-11{ top: 150px; left: 150px; }
@@ -93,7 +93,7 @@ a.to-top-button.bp-br.bm-11{ bottom: 150px; right: 150px; }
 
 ### Border
 
-Set the `border.width` parameter as follows `border: 4` and create the following CSS selectors:
+Set the `border.width` parameter as follows - `border: 4` - and create the following CSS selectors:
 
 **white mode:**
 
@@ -109,7 +109,7 @@ a.to-top-button.bw-4b{ border: 4px solid #000; }
 
 ### Size
 
-Set the `size` parameter as follows `size: 7` and create the following CSS selectors:
+Set the `size` parameter as follows - `size: 7` - and create the following CSS selector:
 
 ```CSS
 a.to-top-button.sz-7{ width: 100px; height: 100px; }
@@ -118,7 +118,7 @@ a.to-top-button.sz-7{ width: 100px; height: 100px; }
 Be aware that changing the size might negatively influence the icon positioning.
 
 ### Shadows
-Set the `iconShadow` and `btnShadow` parameters as follows `iconShadow: 16` | `btnShadow: 6` and create the following CSS selectors:
+Set the `iconShadow` and `btnShadow` parameters as follows - `iconShadow: 16`, `btnShadow: 6` - and create the following CSS selectors:
 
 **Icon Shadow:**
 
@@ -134,7 +134,6 @@ a.to-top-button.bs-6 { box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 1); ... }
 
 ## Showroom
 Basic examples of the *Floating To Top Button* in action:
-
 
 **Button** - *[Styling 1](/screenshots/button-1.jpg)*
 
