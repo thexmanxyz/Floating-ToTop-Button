@@ -1,3 +1,17 @@
+/******************************************************
+*                                                     *
+*   Floating ToTop Button - jQuery Plugin             *
+*                                                     *
+*   Purpose: This project contains a simple and       *
+*   full configurable jQuery plugin which appends a   *
+*   customizable floating ToTop - Button to a DOM     *
+*   node of a HTML page.                              *
+*                                                     *
+*   Author: Andreas Kar (thex) <andreas.kar@gmx.at>   *
+*   URL: https://git.io/fA1FW                         *
+*                                                     *
+******************************************************/
+
 (function( $ ) {
     var btnClass = 'to-top-button';
     var imgClass = 'arrow-img';
