@@ -8,7 +8,7 @@
 *   node of a HTML page.                              *
 *                                                     *
 *   Author: Andreas Kar (thex) <andreas.kar@gmx.at>   *
-*   URL: https://git.io/fA1FW                         *
+*   Repository: https://git.io/fA1FW                  *
 *                                                     *
 ******************************************************/
 
