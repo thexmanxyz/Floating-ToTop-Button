@@ -156,8 +156,12 @@ None
 
 ## Dependencies
 * [jQuery](https://jquery.com/)
+* [leungwensen/svg-icon](https://github.com/leungwensen/svg-icon)
 
 ## Credits
+
+Thanks to the jQuery team for this [great plugin tutorial](https://learn.jquery.com/plugins/basic-plugin-creation/).
+
 This project uses SVG icons from [leungwensen/svg-icon](https://github.com/leungwensen/svg-icon). Many thanks to the author / owner for providing this great collection.
 
 ## by [thex](https://github.com/thexmanxyz)
