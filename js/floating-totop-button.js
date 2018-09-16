@@ -16,17 +16,17 @@
     function addClickEvents(opts){
         var selector = opts.clickSelectors.join(',');
         selector = opts.clickSelectors.length > 0 ? ',' + selector : '';
-        $('a.' + btnClass + selector).click(opts.animateScroll.bind(opts,opts));
+        $('a.' + btnClass + selector).click(opts.animateScroll.bind(opts));
     }
     
     // append callback scroll event
     function addScrollEvent(opts){
-        $(window).scroll(opts.fadeScroll.bind(opts, opts));
+        $(window).scroll(opts.fadeScroll.bind(opts));
     }
     
     // append resize hide event
     function addResizeEvent(opts){
-        $(window).resize(opts.resizeHide.bind(opts, opts));   
+        $(window).resize(opts.resizeHide.bind(opts));   
     }
     
     // add button to DOM
@@ -173,28 +173,28 @@
         clickSelectors: [],
         
         // scroll animation method - can be user customized
-        animateScroll: function(opts){
-            $('html, body').animate({scrollTop: 0}, opts.animationTime);
+        animateScroll: function(){
+            $('html, body').animate({scrollTop: 0}, this.animationTime);
             return false;
         },
         
         // fade scroll method - can be user customized
-        fadeScroll: function(opts) {
+        fadeScroll: function() {
             var btn = $('a.' + btnClass);
-            if(opts.autoHide && showMobile(opts)){
-                if(showScroll(opts)) {
+            if(this.autoHide && showMobile(this)){
+                if(showScroll(this)) {
                     if(!$(btn).is(':visible'))
-                        $(btn).fadeIn(opts.fadeInSpeed);
+                        $(btn).fadeIn(this.fadeInSpeed);
                 }else{
                     if($(btn).is(':visible'))
-                        $(btn).fadeOut(opts.fadeOutSpeed);
+                        $(btn).fadeOut(this.fadeOutSpeed);
                 }
             }
         },
         
         // resize hide method - can be user customized
-        resizeHide: function(opts) {
-            if(showMobile(opts) && showScroll(opts))
+        resizeHide: function() {
+            if(showMobile(this) && showScroll(this))
                 $('.' + btnClass).css('display', 'inline');
             else
                 $('.' + btnClass).css('display', 'none');
