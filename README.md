@@ -129,7 +129,7 @@ a.to-top-button .arrow-img.is-16{ filter: drop-shadow(10px 10px 10px #EEE); ... 
 **Button Shadow:**
 
 ```CSS
-a.to-top-button.bs-6 { box-shadow:  3px 3px 4px 0 rgba(0, 0, 0, 1); ... }
+a.to-top-button.bs-6 { box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 1); ... }
 ```
 
 ## Showroom
