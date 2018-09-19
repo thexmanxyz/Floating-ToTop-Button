@@ -1,3 +1,31 @@
-.idea/
-.DS_Store/
+# Windows thumbnail cache files
 Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Image DB
+[Tt]humbs.db
+
+# IntelliJ
+.idea/
+
+# Mac OS
+.DS_Store/
