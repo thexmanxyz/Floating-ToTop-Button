@@ -1,5 +1,5 @@
 # Floating ToTop Button
-This project contains a simple and full configurable jQuery plugin which appends a customizable floating *ToTop* - Button to a DOM node of a HTML page. On the following website, [gantryprojects](https://gantryprojects.com), you can see the button and it's behavior in action. If you want to try it yourself, simply download the latest version and follow the installation guide below.
+This project contains a simple and full configurable jQuery plugin which appends a customizable floating ToTop button to a DOM node of a HTML page. On the following website, [gantryprojects](https://gantryprojects.com), you can see the button and it's behavior in action. If you want to try it yourself, simply download the latest version and follow the installation guide below.
 
 ## Prerequisites
 * Basic web frontend knowledge
@@ -18,23 +18,23 @@ This project contains a simple and full configurable jQuery plugin which appends
 ## Configuration and Parameters
 The plugin can be easily configured during the initialization and the following parameters are currently available. The listing contains the parameters together with their default values.
 
-- `imagePath: './img/icons',` | Base path of the icon files which can be changed if the default location doesn't fit your folder hierarchy.
+- `imagePath: './img/icons',` | Base path for the icon files which can be changed if the default location doesn't fit your folder hierarchy.
 - `arrowType: 'arrow',` | Defines the icon appearance, available default options are `arrow`, `arrow-circle`, `caret`, `caret-circle`, `circle`, `circle-o`, `arrow-l`, `drop`, `rise`, `top`. You can also use your own SVG image. But take a look on the `/img` path and how black and white icons are distinguished and identified.
 - `scrollTrigger: 300,` | Scroll amount in pixel to trigger the button if `autoHide` is on.
-- `animationTime: 700,` | Animation time when scrolling to top after click.
-- `opacity: 20,` | Opacity default value range is `0-20 (0-1.00)`.
+- `animationTime: 700,` | Animation time when scrolling back to top after click.
+- `opacity: 20,` | Opacity default value range from `0-20 (0-1.00)`.
 - `shape: 10,` | Button shape can be defined in the value range `0-10 (0-50%)` - border radius.
-- `margin: 2,` | Margin of the button, with the value range of `0-10 (0-100px)`.
+- `margin: 2,` | Margin of the button, with the value range from `0-10 (0-100px)`.
 - `palette: '',` | Default color palette (CSS color names can be used in lower case). The additional value `'transparent'` makes the button background transparent.
 - `iconColor: 'w',` | Icon color either black or white (`'b'` or `'w'`).
 - `backgroundColor: '',` | HEX or RGB(A) value for the background color.
 - `border: {` | Border options
-	- `width: 0,` | Border width with values range of `0-3 (0-3px)`.
+	- `width: 0,` | Border width default values range from `0-3 (0-3px)`.
 	- `color: '' }` | HEX or RGB(A) value for the border color.
-- `position: 'br',` | The following four options are available: `'tl'` = top-left, `'tr'` = top-right, `'bl'` = bottom-left, `'br'` = bottom-right
+- `position: 'br',` | The following four options are available: `'tl'` = top-left, `'tr'` = top-right, `'bl'` = bottom-left, `'br'` = bottom-right.
 - `size: 4,` | Different button sizes are available, values range from `1-6 (30-80px)`.
-- `fadeInSpeed: 'fast',` | Time for fade in, `'fast'`, `'slow'` or a numerical value e.g. `200`.
-- `fadeOutSpeed: 'fast',` | Time for fade out, `'fast'`, `'slow'` or a numerical value e.g. `200`.
+- `fadeInSpeed: 'fast',` | Time to fade in, `'fast'`, `'slow'` or a numerical value in milliseconds e.g. `200`.
+- `fadeOutSpeed: 'fast',` | Time to fade out, `'fast'`, `'slow'` or a numerical value in milliseconds e.g. `200`.
 - `iconShadow: 4,` | Icon shadow values range from `1-16` for different stylings.
 - `btnShadow: 2,` | Button shadow values range from `1-5` for different stylings.
 - `mobileHide: 768,` | If the value is 0 then the button will always be shown otherwise the button will only be visible if the window width exceeds the specified pixel value.

@@ -3,9 +3,9 @@
 *   Floating ToTop Button - jQuery Plugin             *
 *                                                     *
 *   Purpose: This project contains a simple and       *
-*   full configurable jQuery plugin which appends a   *
-*   customizable floating ToTop - Button to a DOM     *
-*   node of a HTML page.                              *
+*            full configurable jQuery plugin which    *
+*            appends a customizable floating ToTop    *
+*            button to a DOM node of a HTML page.     *
 *                                                     *
 *   Author: Andreas Kar (thex) <andreas.kar@gmx.at>   *
 *   Repository: https://git.io/fA1FW                  *
@@ -130,32 +130,32 @@
     
    /* default values
     *
-    * imagePath: Base path of the icon files.
-    * arrowType: Defines the icon appearance, available default options are arrow, arrow-circle, caret, caret-circle, circle, circle-o, arrow-l, drop, rise, top. You can also use your own SVG image.
+    * imagePath: Base path for the icon files which can be changed if the default location doesn't fit your folder hierarchy.
+    * arrowType: Defines the icon appearance, available default options are 'arrow', 'arrow-circle', 'caret', 'caret-circle', 'circle', 'circle-o', 'arrow-l', 'drop', 'rise', 'top'. You can also use your own SVG image. But take a look on the /img path and how black and white icons are distinguished and identified.
     * scrollTrigger: Scroll amount in pixel to trigger the button if autoHide is on.
     * animationTime: Animation time when scrolling back to top after click.
-    * opacity: Opacity default value range is 0-20 (0-1.00).
+    * opacity: Opacity default value range from 0-20 (0-1.00).
     * shape: Button shape can be defined in the value range 0-10 (0-50%) - border radius.
-    * margin: Margin of the button, with the value range of 0-10 (0-100px).
-    * palette: Default color palette (CSS color names can be used in lower case).
+    * margin: Margin of the button, with the value range from 0-10 (0-100px).
+    * palette: Default color palette (CSS color names can be used in lower case). The additional value 'transparent' makes the button background transparent.
     * iconColor: Icon color either black or white ('b' or 'w').
     * backgroundColor: HEX or RGB(A) value for the background color.
-    * border.width: Border width with values range of 0-3 (0-3px).
+    * border.width: Border width default values range from 0-3 (0-3px).
     * border.color: HEX or RGB(A) value for the border color.
     * position: The following four options are available: 'tl' = top-left, 'tr' = top-right, 'bl' = bottom-left, 'br' = bottom-right.
     * size: Different button sizes are available, values range from 1-6 (30-80px).
-    * fadeInSpeed: Time for fade in, "fast", "slow" or a numerical value e.g. 200.
-    * fadeOutSpeed: Time for fade out, "fast", "slow" or a numerical value e.g. 200.
+    * fadeInSpeed: Time to fade in, 'fast', 'slow' or a numerical value in milliseconds e.g. 200.
+    * fadeOutSpeed: Time to fade out, 'fast', 'slow' or a numerical value in milliseconds e.g. 200.
     * iconShadow: Icon shadow values range from 1-16 for different stylings.
     * btnShadow: Button shadow values range from 1-5 for different stylings.
     * mobileHide: If the value is 0 then the button will always be shown otherwise the button will only be visible if the window width exceeds the specified pixel value.
-    * autoHide: If enabled, the button will automatically hide depending on the scrollTrigger value.  
+    * autoHide: If enabled, the button will automatically hide depending on the scrollTrigger value.
     * filter: Defines whether a CSS filter should be used instead of the default color rollover (be aware of browser support).
     * linkClasses: Array of link classes in the form ['a','b','c'].
     * imgClasses: Array of images classes in the form ['d','e','f'].
-    * clickSelectors: Additional selectors for the button click event in the form [g,h,i].
+    * clickSelectors: Additional selectors for the button click event in the form ['g','h','i'].
     * animateScroll: Custom function for the scroll animation (callback).
-    * fadeScroll Custom function for the scroll button fading (callback).
+    * fadeScroll Custom function for the scroll animation (callback).
     *
     */
     $.fn.toTopButton.defaults = {
