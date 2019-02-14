@@ -54,20 +54,6 @@ The following example shows how you can specify plugin parameters to change the 
 $("body").toTopButton({arrowType: 'circle', opacity: 10, size: 6});
 ``` 
 
-## Features
-
-* customization of icons with 10 different arrow types
-* additional icon images can be easily added and used (SVG)
-* button styling with opacity, shape, margin, border, icon and background color
-* a huge selection of default color palettes
-* different button sizes and screen positions
-* different shadows for both icon and button
-* custom CSS classes can be attached on the button and the icon 
-* support for the easy extensiblity of predefined default options
-* customization of the default scroll and fade animation
-* behavior control options like auto/mobile hide, fade-in and fade-out speed
-* attach additional click selectors on external DOM elements
-
 ## CSS Customization
 For most of the plugins basic CSS styling options there exists a way to create your own selector and simply pass it as a new identifier to the plugin so that it will be used during the plugin initialization. This sounds a bit abstract so the following examples should help to understand the attachment of CSS customizations.
 
@@ -145,6 +131,20 @@ a.to-top-button .arrow-img.is-16{ filter: drop-shadow(10px 10px 10px #EEE); ... 
 ```CSS
 a.to-top-button.bs-6 { box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 1); ... }
 ```
+
+## Features
+
+* customization of icons with 10 different arrow types
+* additional icon images can be easily added and used (SVG)
+* button styling with opacity, shape, margin, border, icon and background color
+* a huge selection of default color palettes
+* different button sizes and screen positions
+* different shadows for both icon and button
+* custom CSS classes can be attached on the button and the icon 
+* support for the easy extensiblity of predefined default options
+* customization of the default scroll and fade animation
+* behavior control options like auto/mobile hide, fade-in and fade-out speed
+* attach additional click selectors on external DOM elements
 
 ## Showroom
 Basic examples of the *Floating To Top Button* in action:
