@@ -179,4 +179,4 @@ Thanks to the jQuery team for this [great plugin tutorial](https://learn.jquery.
 This project uses SVG icons from [leungwensen/svg-icon](https://github.com/leungwensen/svg-icon).
 
 ## by [thex](https://github.com/thexmanxyz)
-Copyright (c) 2018, free to use in personal and commercial software as per the [license](/LICENSE.md).
+Copyright (c) 2018, free to use in personal and commercial software as per the [license](/LICENSE).
