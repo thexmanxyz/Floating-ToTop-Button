@@ -125,7 +125,7 @@
         addScrollEvent(opts);
         addClickEvents(opts);
         addResizeEvent(opts);
-        opts.fadeScroll();
+        opts.resizeHide();
     };
     
     
