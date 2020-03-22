@@ -219,4 +219,4 @@
 })( jQuery );
 
 // attach plugin to body, basic example
-// $("body").toTopButton({});
+// $('body').toTopButton({});
