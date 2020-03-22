@@ -119,7 +119,7 @@
 
     // append button and create events
     $.fn.toTopButton = function(options) {
-        var opts = $.extend({}, $.fn.toTopButton.defaults, options);
+        var opts = $.extend(true, {}, $.fn.toTopButton.defaults, options);
 
         appendButton(this, opts);
         addScrollEvent(opts);
