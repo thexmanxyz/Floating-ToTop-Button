@@ -45,6 +45,7 @@ The plugin can be easily configured during the initialization and the following 
 - `clickSelectors: [],` | Additional selectors for the button click event in the form `['g','h','i']`.
 - `animateScroll: function(opts){ ... }` | Custom function for the scroll animation (callback).
 - `fadeScroll: function(opts){ ... }` | Custom function for the scroll button fading (callback).
+- `resizeHide: function(opts){ ... }` | Custom function called during resize event (callback).
 
 **Example:**
 

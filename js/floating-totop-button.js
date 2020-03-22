@@ -15,34 +15,34 @@
 (function( $ ) {
     var btnClass = 'to-top-button';
     var imgClass = 'arrow-img';
-    
+
     // helper function to determine mobile visibility
     function showMobile(opts){
         return opts.mobileHide == 0 || $(window).width() >= opts.mobileHide;
     }
-    
+
     // helper function to determine scroll visibility
     function showScroll(opts){
         return $(window).scrollTop() >= opts.scrollTrigger
     }
-        
+
     // append callback click events
     function addClickEvents(opts){
         var selector = opts.clickSelectors.join(',');
         selector = opts.clickSelectors.length > 0 ? ',' + selector : '';
         $('a.' + btnClass + selector).click(opts.animateScroll.bind(opts));
     }
-    
+
     // append callback scroll event
     function addScrollEvent(opts){
         $(window).scroll(opts.fadeScroll.bind(opts));
     }
-    
-    // append resize hide event
+
+    // append callback resize hide event
     function addResizeEvent(opts){
         $(window).resize(opts.resizeHide.bind(opts));   
     }
-    
+
     // add button to DOM
     function appendButton(that, opts){
         var opClass = ' op-' + opts.opacity;
@@ -56,44 +56,44 @@
         var isClass = '';
         var bsClass = '';
         var pClass = '';
-        
+
         var imgCClasses = opts.imgClasses.join(' ');
         var linkCClasses = opts.linkClasses.join(' ');
         var linkClasses = '';
         var imgClasses = '';
-        
+
         var linkStyle = '';
         var imgPath = '';
         var iconColor = '';
-        
+
         // determine icon color
         iconColor = opts.iconColor == 'b' ? 'b' : 'w';
-        
+
         // image path
         imgPath = opts.imagePath + '/' + iconColor + '/' + opts.arrowType + '.svg';
-        
+
         // border
         bwClass = bwClass + iconColor;
-        
+
         // shadows
         if(opts.iconShadow != '')
             isClass = ' is-' + opts.iconShadow ;
-        
+
         if(opts.btnShadow != '')
             bsClass = ' bs-' + opts.btnShadow;
-        
+
         // palette
         if(opts.palette != '')
             pClass = ' p-' + opts.palette.toLowerCase();
-        
+
         // auto hide
         if(opts.autoHide)
             hideClass = ' hide';
-        
+
         // filter
         if(opts.filter)
             filterClass = ' filter';
-            
+
         // build styles 
         if(opts.border.color != '' || opts.backgroundColor != '' || !showMobile(opts)){
             var boColor = 'border-color:' + opts.border.color;
@@ -101,22 +101,22 @@
             var display = !showMobile(opts) ? 'display:none' : '';
             linkStyle = ' style="' + bgColor + ';' + boColor + ';' + display + '"';
         }
-        
+
         // build custom classes 
         imgCClasses = imgCClasses.length > 0 ? imgCClasses + ' ' : imgCClasses;
         linkCClasses = linkCClasses.length > 0 ? linkCClasses + ' ' : linkCClasses;
-        
+
         // build link and image classes
         linkClasses = btnClass + opClass + shClass + bpClass +  bmClass + pClass + szClass 
                     + bwClass + bsClass + hideClass + filterClass + linkCClasses;
-                    
+
         imgClasses = imgClass + isClass + ' ' + opts.arrowType + '-img' + imgCClasses;
-        
+
         // append to DOM
         $(that).prepend('<a href="#" class="' + linkClasses + '"' + linkStyle 
                         + '><img src="' + imgPath + '" class="' + imgClasses + '"></a>');
     }
-    
+
     // append button and create events
     $.fn.toTopButton = function(options) {
         var opts = $.extend({}, $.fn.toTopButton.defaults, options);
@@ -127,8 +127,7 @@
         addResizeEvent(opts);
         opts.resizeHide();
     };
-    
-    
+
    /* default values
     *
     * imagePath: Base path for the icon files which can be changed if the default location doesn't fit your folder hierarchy.
@@ -156,7 +155,8 @@
     * imgClasses: Array of images classes in the form ['d','e','f'].
     * clickSelectors: Additional selectors for the button click event in the form ['g','h','i'].
     * animateScroll: Custom function for the scroll animation (callback).
-    * fadeScroll Custom function for the scroll animation (callback).
+    * fadeScroll: Custom function for the scroll animation (callback).
+    * resizeHide: Custom function called during resize event (callback).
     *
     */
     $.fn.toTopButton.defaults = {
@@ -186,13 +186,13 @@
         linkClasses: [],
         imgClasses: [],
         clickSelectors: [],
-        
+
         // scroll animation method - can be user customized
         animateScroll: function(){
             $('html, body').animate({scrollTop: 0}, this.animationTime);
             return false;
         },
-        
+
         // fade scroll method - can be user customized
         fadeScroll: function() {
             var btn = $('a.' + btnClass);
@@ -206,7 +206,7 @@
                 }
             }
         },
-        
+
         // resize hide method - can be user customized
         resizeHide: function() {
             if(showMobile(this) && showScroll(this))
