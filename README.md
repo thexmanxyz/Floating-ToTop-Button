@@ -30,7 +30,7 @@ The plugin can be easily configured during the initialization and the following 
 - `backgroundColor: '',` | HEX or RGB(A) value for the background color.
 - `border: {` | Border options
 	- `width: 0,` | Border width default values range from `0-3 (0-3px)`.
-	- `color: '' }` | HEX or RGB(A) value for the border color.
+	- `color: '' },` | HEX or RGB(A) value for the border color.
 - `position: 'br',` | The following four options are available: `'tl'` = top-left, `'tr'` = top-right, `'bl'` = bottom-left, `'br'` = bottom-right.
 - `size: 4,` | Different button sizes are available, values range from `1-6 (30-80px)`.
 - `fadeInSpeed: 'fast',` | Time to fade in, `'fast'`, `'slow'` or a numerical value in milliseconds e.g. `200`.
@@ -43,8 +43,8 @@ The plugin can be easily configured during the initialization and the following 
 - `linkClasses: [],` | Array of link classes in the form `['a','b','c']`.
 - `imgClasses: [],` | Array of images classes in the form `['d','e','f']`.
 - `clickSelectors: [],` | Additional selectors for the button click event in the form `['g','h','i']`.
-- `animateScroll: function(opts){ ... }` | Custom function for the scroll animation (callback).
-- `fadeScroll: function(opts){ ... }` | Custom function for the scroll button fading (callback).
+- `animateScroll: function(opts){ ... },` | Custom function for the scroll animation (callback).
+- `fadeScroll: function(opts){ ... },` | Custom function for the scroll button fading (callback).
 - `resizeHide: function(opts){ ... }` | Custom function called during resize event (callback).
 
 **Example:**
@@ -52,7 +52,7 @@ The plugin can be easily configured during the initialization and the following 
 The following example shows how you can specify plugin parameters to change the default icon, set the opacity to `0.5` and increases the button dimension to `80px`.
 
 ```Javascript
-$("body").toTopButton({arrowType: 'circle', opacity: 10, size: 6});
+$('body').toTopButton({arrowType: 'circle', opacity: 10, size: 6});
 ``` 
 
 ## CSS Customization
@@ -62,7 +62,7 @@ For most of the plugins basic CSS styling options there exists a way to create y
 Set the `opacity` parameter as follows - `opacity: 21` - and create the following CSS selector:
 
 ```CSS
-a.to-top-button.op-21{ opacity: 0.98; }
+a.to-top-button.op-21 { opacity: 0.98; }
 ```
 
 ### Shape
@@ -77,19 +77,19 @@ a.to-top-button.sh-11 { border-radius: 2%; ... }
 Set the `margin` parameter as follows - `margin: 11` - and create the following CSS selectors:
 
 ```CSS
-a.to-top-button.bp-tl.bm-11{ top: 150px; left: 150px; }
+a.to-top-button.bp-tl.bm-11 { top: 150px; left: 150px; }
 ```
 
 ```CSS
-a.to-top-button.bp-tr.bm-11{ top: 150px; right: 150px; }
+a.to-top-button.bp-tr.bm-11 { top: 150px; right: 150px; }
 ```
 
 ```CSS
-a.to-top-button.bp-bl.bm-11{ bottom: 150px; left: 150px; }
+a.to-top-button.bp-bl.bm-11 { bottom: 150px; left: 150px; }
 ```
 
 ```CSS
-a.to-top-button.bp-br.bm-11{ bottom: 150px; right: 150px; }
+a.to-top-button.bp-br.bm-11 { bottom: 150px; right: 150px; }
 ```
 
 ### Border
@@ -99,13 +99,13 @@ Set the `border.width` parameter as follows - `border: 4` - and create the follo
 **white mode:**
 
 ```CSS
-a.to-top-button.bw-4w{ border: 4px solid #FFF; }
+a.to-top-button.bw-4w { border: 4px solid #FFF; }
 ```
 
 **black mode:**
 
 ```CSS
-a.to-top-button.bw-4b{ border: 4px solid #000; }
+a.to-top-button.bw-4b { border: 4px solid #000; }
 ```
 
 ### Size
@@ -113,7 +113,7 @@ a.to-top-button.bw-4b{ border: 4px solid #000; }
 Set the `size` parameter as follows - `size: 7` - and create the following CSS selector:
 
 ```CSS
-a.to-top-button.sz-7{ width: 100px; height: 100px; }
+a.to-top-button.sz-7 { width: 100px; height: 100px; }
 ```
 
 Be aware that changing the size might negatively influence the icon positioning.
@@ -124,7 +124,7 @@ Set the `iconShadow` and `btnShadow` parameters as follows - `iconShadow: 16`, `
 **Icon Shadow:**
 
 ```CSS
-a.to-top-button .arrow-img.is-16{ filter: drop-shadow(10px 10px 10px #EEE); ... }
+a.to-top-button .arrow-img.is-16 { filter: drop-shadow(10px 10px 10px #EEE); ... }
 ```
 
 **Button Shadow:**
