@@ -47,7 +47,7 @@ The plugin can be easily configured during the initialization and the following 
 - `fadeScroll: function(opts){ ... },` | Custom function for the scroll button fading (callback).
 - `resizeHide: function(opts){ ... }` | Custom function called during resize event (callback).
 
-**Example:**
+### Example
 
 The following example shows how you can specify plugin parameters to change the default icon, set the opacity to `0.5` and increases the button dimension to `80px`.
 
