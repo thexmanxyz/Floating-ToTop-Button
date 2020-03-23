@@ -12,7 +12,7 @@ This project contains a simple and full configurable jQuery plugin which appends
    * **CSS:** `<link href="css/floating-totop-button.min.css" rel="stylesheet">`
    * **JS:** `<script src="js/floating-totop-button.min.js"></script>`
 4. Initialize the plugin with basic values as follows
-   * **Plugin Initialization:** `$("body").toTopButton({});` or `jQuery("body").toTopButton({});`
+   * **Plugin Initialization:** `$('body').toTopButton({});` or `jQuery('body').toTopButton({});`
 5. If you want to further customize the appearance or behavior please take a closer look on the plugin parameters and their explanation listed in the next section.
 
 ## Configuration and Parameters
