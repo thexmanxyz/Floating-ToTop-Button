@@ -154,9 +154,9 @@
     * linkClasses: Array of link classes in the form ['a','b','c'].
     * imgClasses: Array of images classes in the form ['d','e','f'].
     * clickSelectors: Additional selectors for the button click event in the form ['g','h','i'].
-    * animateScroll: Custom function for the scroll animation (callback).
-    * fadeScroll: Custom function for the scroll animation (callback).
-    * resizeHide: Custom function called during resize event (callback).
+    * animateScroll: Function for the scroll animation (callback).
+    * fadeScroll: Function for the scroll animation (callback).
+    * resizeHide: Function called during resize event (callback).
     *
     */
     $.fn.toTopButton.defaults = {

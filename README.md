@@ -61,9 +61,9 @@ The plugin can be easily configured during the initialization and the following 
 - `linkClasses: [],` | Array of link classes in the form `['a','b','c']`.
 - `imgClasses: [],` | Array of images classes in the form `['d','e','f']`.
 - `clickSelectors: [],` | Additional selectors for the button click event in the form `['g','h','i']`.
-- `animateScroll: function(opts){ ... },` | Custom function for the scroll animation (callback).
-- `fadeScroll: function(opts){ ... },` | Custom function for the scroll button fading (callback).
-- `resizeHide: function(opts){ ... }` | Custom function called during resize event (callback).
+- `animateScroll: function(opts){ ... },` | Function for the scroll animation (callback).
+- `fadeScroll: function(opts){ ... },` | Function for the scroll button fading (callback).
+- `resizeHide: function(opts){ ... }` | Function called during resize event (callback).
 
 ### Example
 
