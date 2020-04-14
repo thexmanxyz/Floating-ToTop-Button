@@ -13,52 +13,53 @@
 ******************************************************/
 
 (function( $ ) {
-    var btnClass = 'to-top-button';
-    var imgClass = 'arrow-img';
+
+    // all configurations
+    var config;
 
     // helper function to determine mobile visibility
-    function showMobile(opts){
-        return opts.mobileHide == 0 || $(window).width() >= opts.mobileHide;
+    function showMobile(){
+        return config.mobileHide == 0 || $(window).width() >= config.mobileHide;
     }
 
     // helper function to determine scroll visibility
-    function showScroll(opts){
-        return $(window).scrollTop() >= opts.scrollTrigger
+    function showScroll(){
+        return $(window).scrollTop() >= config.scrollTrigger
     }
 
     // append callback click events
-    function addClickEvents(opts){
-        var selector = opts.clickSelectors.join(',');
-        selector = opts.clickSelectors.length > 0 ? ',' + selector : '';
-        $('a.' + btnClass + selector).click(opts.animateScroll.bind(opts));
+    function addClickEvents(){
+        var selector = config.clickSelectors.join(',');
+        selector = config.clickSelectors.length > 0 ? ',' + selector : '';
+        $('a.' + config.buttonClass + selector).click(config.animateScroll.bind(config));
     }
 
     // append callback scroll event
-    function addScrollEvent(opts){
-        $(window).scroll(opts.fadeScroll.bind(opts));
+    function addScrollEvent(){
+        $(window).scroll(config.fadeScroll.bind(config));
     }
 
     // append callback resize hide event
-    function addResizeEvent(opts){
-        $(window).resize(opts.resizeHide.bind(opts));   
+    function addResizeEvent(){
+        $(window).resize(config.resizeHide.bind(config));   
     }
 
     // add button to DOM
-    function appendButton(that, opts){
-        var opClass = ' op-' + opts.opacity;
-        var shClass = ' sh-' + opts.shape;
-        var bpClass = ' bp-' + opts.position;
-        var bmClass = ' bm-' + opts.margin;
-        var szClass = ' sz-' + opts.size;
-        var bwClass = ' bw-' + opts.border.width;
+    function appendButton(that){
+        var opClass = ' op-' + config.opacity;
+        var shClass = ' sh-' + config.shape;
+        var bpClass = ' bp-' + config.position;
+        var bmClass = ' bm-' + config.margin;
+        var szClass = ' sz-' + config.size;
+        var bwClass = ' bw-' + config.border.width;
         var filterClass = '';
         var hideClass = '';
         var isClass = '';
         var bsClass = '';
         var pClass = '';
 
-        var imgCClasses = opts.imgClasses.join(' ');
-        var linkCClasses = opts.linkClasses.join(' ');
+        var imgCClasses = config.imgClasses.join(' ');
+        var linkCClasses = config.linkClasses.join(' ');
         var linkClasses = '';
         var imgClasses = '';
 
@@ -67,38 +68,38 @@
         var iconColor = '';
 
         // determine icon color
-        iconColor = opts.iconColor == 'b' ? 'b' : 'w';
+        iconColor = config.iconColor == 'b' ? 'b' : 'w';
 
         // image path
-        imgPath = opts.imagePath + '/' + iconColor + '/' + opts.arrowType + '.svg';
+        imgPath = config.imagePath + '/' + iconColor + '/' + config.arrowType + '.svg';
 
         // border
         bwClass = bwClass + iconColor;
 
         // shadows
-        if(opts.iconShadow != '')
-            isClass = ' is-' + opts.iconShadow ;
+        if(config.iconShadow != '')
+            isClass = ' is-' + config.iconShadow ;
 
-        if(opts.btnShadow != '')
-            bsClass = ' bs-' + opts.btnShadow;
+        if(config.btnShadow != '')
+            bsClass = ' bs-' + config.btnShadow;
 
         // palette
-        if(opts.palette != '')
-            pClass = ' p-' + opts.palette.toLowerCase();
+        if(config.palette != '')
+            pClass = ' p-' + config.palette.toLowerCase();
 
         // auto hide
-        if(opts.autoHide)
+        if(config.autoHide)
             hideClass = ' hide';
 
         // filter
-        if(opts.filter)
+        if(config.filter)
             filterClass = ' filter';
 
         // build styles 
-        if(opts.border.color != '' || opts.backgroundColor != '' || !showMobile(opts)){
-            var boColor = 'border-color:' + opts.border.color;
-            var bgColor = 'background-color:' + opts.backgroundColor;
-            var display = !showMobile(opts) ? 'display:none' : '';
+        if(config.border.color != '' || config.backgroundColor != '' || !showMobile()){
+            var boColor = 'border-color:' + config.border.color;
+            var bgColor = 'background-color:' + config.backgroundColor;
+            var display = !showMobile() ? 'display:none' : '';
             linkStyle = ' style="' + bgColor + ';' + boColor + ';' + display + '"';
         }
 
@@ -107,10 +108,10 @@
         linkCClasses = linkCClasses.length > 0 ? linkCClasses + ' ' : linkCClasses;
 
         // build link and image classes
-        linkClasses = btnClass + opClass + shClass + bpClass +  bmClass + pClass + szClass 
+        linkClasses = config.buttonClass + opClass + shClass + bpClass +  bmClass + pClass + szClass 
                     + bwClass + bsClass + hideClass + filterClass + linkCClasses;
 
-        imgClasses = imgClass + isClass + ' ' + opts.arrowType + '-img' + imgCClasses;
+        imgClasses = config.imgClass + isClass + ' ' + config.arrowType + '-img' + imgCClasses;
 
         // append to DOM
         $(that).prepend('<a href="#" class="' + linkClasses + '"' + linkStyle 
@@ -119,13 +120,13 @@
 
     // append button and create events
     $.fn.toTopButton = function(options) {
-        var opts = $.extend(true, {}, $.fn.toTopButton.defaults, options);
+        config = $.extend(true, {}, $.fn.toTopButton.defaults, options);
 
-        appendButton(this, opts);
-        addScrollEvent(opts);
-        addClickEvents(opts);
-        addResizeEvent(opts);
-        opts.resizeHide();
+        appendButton(this);
+        addScrollEvent();
+        addClickEvents();
+        addResizeEvent();
+        config.resizeHide();
     };
 
    /* default values
@@ -151,6 +152,8 @@
     * mobileHide: If the value is 0 then the button will always be shown otherwise the button will only be visible if the window width exceeds the specified pixel value.
     * autoHide: If enabled, the button will automatically hide depending on the scrollTrigger value.
     * filter: Defines whether a CSS filter should be used instead of the default color rollover (be aware of browser support).
+    * buttonClass: The default class attached to the floating botton container.
+    * imgClass: The class attached to the buttom image element (arrow).
     * linkClasses: Array of link classes in the form ['a','b','c'].
     * imgClasses: Array of images classes in the form ['d','e','f'].
     * clickSelectors: Additional selectors for the button click event in the form ['g','h','i'].
@@ -183,19 +186,21 @@
         mobileHide: 768,
         autoHide: true,
         filter: true,
+        buttonClass: 'to-top-button',
+        imgClass: 'arrow-img',
         linkClasses: [],
         imgClasses: [],
         clickSelectors: [],
 
-        // scroll animation method - can be user customized
+        // scroll animation method
         animateScroll: function(){
             $('html, body').animate({scrollTop: 0}, this.animationTime);
             return false;
         },
 
-        // fade scroll method - can be user customized
+        // fade scroll method
         fadeScroll: function() {
-            var btn = $('a.' + btnClass);
+            var btn = $('a.' + config.buttonClass);
             if(this.autoHide && showMobile(this)){
                 if(showScroll(this)) {
                     if(!$(btn).is(':visible'))
@@ -207,12 +212,12 @@
             }
         },
 
-        // resize hide method - can be user customized
+        // resize hide method
         resizeHide: function() {
             if(showMobile(this) && showScroll(this))
-                $('.' + btnClass).css('display', 'inline');
+                $('.' + config.buttonClass).css('display', 'inline');
             else
-                $('.' + btnClass).css('display', 'none');
+                $('.' + config.buttonClass).css('display', 'none');
         }
     };
  

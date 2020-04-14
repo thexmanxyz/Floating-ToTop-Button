@@ -58,12 +58,14 @@ The plugin can be easily configured during the initialization and the following 
 - `mobileHide: 768,` | If the value is 0 then the button will always be shown otherwise the button will only be visible if the window width exceeds the specified pixel value.
 - `autoHide: true,` | If enabled, the button will automatically hide depending on the `scrollTrigger` value.
 - `filter: true,` | Defines whether a CSS filter should be used instead of the default color rollover (be aware of browser support).
+- `buttonClass: 'to-top-button',` | The default class attached to the floating botton container.
+- `imgClass: 'arrow-img',` | The class attached to the buttom image element (arrow).
 - `linkClasses: [],` | Array of link classes in the form `['a','b','c']`.
 - `imgClasses: [],` | Array of images classes in the form `['d','e','f']`.
 - `clickSelectors: [],` | Additional selectors for the button click event in the form `['g','h','i']`.
-- `animateScroll: function(opts){ ... },` | Function for the scroll animation (callback).
-- `fadeScroll: function(opts){ ... },` | Function for the scroll button fading (callback).
-- `resizeHide: function(opts){ ... }` | Function called during resize event (callback).
+- `animateScroll: function(){ ... },` | Function for the scroll animation (callback).
+- `fadeScroll: function(){ ... },` | Function for the scroll button fading (callback).
+- `resizeHide: function(){ ... }` | Function called during resize event (callback).
 
 ### Example
 
