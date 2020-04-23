@@ -1,0 +1,162 @@
+/******************************************************
+*                                                     *
+*   Floating ToTop Button - jQuery Plugin             *
+*                                                     *
+*   Purpose: This project contains a simple and       *
+*            full configurable jQuery plugin which    *
+*            appends a customizable floating ToTop    *
+*            button to a DOM node of a HTML page.     *
+*                                                     *
+*   Author: Andreas Kar (thex) <andreas.kar@gmx.at>   *
+*   Repository: https://git.io/fA1FW                  *
+*                                                     *
+******************************************************/
+
+a.to-top-button {
+    position: fixed;
+    z-index: 9999;
+    color: #fff;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    background-color: rgb(97, 110, 131);
+}
+
+a.to-top-button:not(.filter):hover { background-color: rgb(121, 121, 121); }
+a.to-top-button.filter:hover { filter: brightness(115%); -webkit-filter: brightness(115%); }
+
+a.to-top-button.hide { display:none; }
+
+a.to-top-button.sz-1 { width: 30px; height: 30px; }
+a.to-top-button.sz-2 { width: 40px; height: 40px; }
+a.to-top-button.sz-3 { width: 50px; height: 50px; }
+a.to-top-button.sz-4 { width: 60px; height: 60px; }
+a.to-top-button.sz-5 { width: 70px; height: 70px; }
+a.to-top-button.sz-6 { width: 80px; height: 80px; }
+
+a.to-top-button.bp-tl.bm-0 { top: 0; left: 0; }
+a.to-top-button.bp-tr.bm-0 { top: 0; right: 0; }
+a.to-top-button.bp-bl.bm-0 { bottom: 0; left: 0; }
+a.to-top-button.bp-br.bm-0 { bottom: 0; right: 0; }
+a.to-top-button.bp-tl.bm-1 { top: 10px; left: 10px; }
+a.to-top-button.bp-tr.bm-1 { top: 10px; right: 10px; }
+a.to-top-button.bp-bl.bm-1 { bottom: 10px; left: 10px; }
+a.to-top-button.bp-br.bm-1 { bottom: 10px; right: 10px; }
+a.to-top-button.bp-tl.bm-2 { top: 20px; left: 20px; }
+a.to-top-button.bp-tr.bm-2 { top: 20px; right: 20px; }
+a.to-top-button.bp-bl.bm-2 { bottom: 20px; left: 20px; }
+a.to-top-button.bp-br.bm-2 { bottom: 20px; right: 20px; }
+a.to-top-button.bp-tl.bm-3 { top: 30px; left: 30px; }
+a.to-top-button.bp-tr.bm-3 { top: 30px; right: 30px; }
+a.to-top-button.bp-bl.bm-3 { bottom: 30px; left: 30px; }
+a.to-top-button.bp-br.bm-3 { bottom: 30px; right: 30px; }
+a.to-top-button.bp-tl.bm-4 { top: 40px; left: 40px; }
+a.to-top-button.bp-tr.bm-4 { top: 40px; right: 40px; }
+a.to-top-button.bp-bl.bm-4 { bottom: 40px; left: 40px; }
+a.to-top-button.bp-br.bm-4 { bottom: 40px; right: 40px; }
+a.to-top-button.bp-tl.bm-5 { top: 50px; left: 50px; }
+a.to-top-button.bp-tr.bm-5 { top: 50px; right: 50px; }
+a.to-top-button.bp-bl.bm-5 { bottom: 50px; left: 50px; }
+a.to-top-button.bp-br.bm-5 { bottom: 50px; right: 50px; }
+a.to-top-button.bp-tl.bm-6 { top: 60px; left: 60px; }
+a.to-top-button.bp-tr.bm-6 { top: 60px; right: 60px; }
+a.to-top-button.bp-bl.bm-6 { bottom: 60px; left: 60px; }
+a.to-top-button.bp-br.bm-6 { bottom: 60px; right: 60px; }
+a.to-top-button.bp-tl.bm-7 { top: 70px; left: 70px; }
+a.to-top-button.bp-tr.bm-7 { top: 70px; right: 70px; }
+a.to-top-button.bp-bl.bm-7 { bottom: 70px; left: 70px; }
+a.to-top-button.bp-br.bm-7 { bottom: 70px; right: 70px; }
+a.to-top-button.bp-tl.bm-8 { top: 80px; left: 80px; }
+a.to-top-button.bp-tr.bm-8 { top: 80px; right: 80px; }
+a.to-top-button.bp-bl.bm-8 { bottom: 80px; left: 80px; }
+a.to-top-button.bp-br.bm-8 { bottom: 80px; right: 80px; }
+a.to-top-button.bp-tl.bm-9 { top: 90px; left: 90px; }
+a.to-top-button.bp-tr.bm-9 { top: 90px; right: 90px; }
+a.to-top-button.bp-bl.bm-9 { bottom: 90px; left: 90px; }
+a.to-top-button.bp-br.bm-9 { bottom: 90px; right: 90px; }
+a.to-top-button.bp-tl.bm-10 { top: 100px; left: 100px; }
+a.to-top-button.bp-tr.bm-10 { top: 100px; right: 100px; }
+a.to-top-button.bp-bl.bm-10 { bottom: 100px; left: 100px; }
+a.to-top-button.bp-br.bm-10 { bottom: 100px; right: 100px; }
+
+a.to-top-button.p-none {}
+
+a.to-top-button.bw-0w { border: 0; }
+a.to-top-button.bw-1w { border: 1px solid #FFF; }
+a.to-top-button.bw-2w { border: 2px solid #FFF; }
+a.to-top-button.bw-3w { border: 3px solid #FFF; }
+
+a.to-top-button.bw-0b { border: 0; }
+a.to-top-button.bw-1b { border: 1px solid #000; }
+a.to-top-button.bw-2b { border: 2px solid #000; }
+a.to-top-button.bw-3b { border: 3px solid #000; }
+
+a.to-top-button.sh-0 { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+a.to-top-button.sh-10 { -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
+
+a.to-top-button.sz-1 .arrow-img { vertical-align: top; margin: 1px 15% }
+a.to-top-button.sz-1 .arrow-img.drop-img { margin: -2px 0%; }
+a.to-top-button.sz-1 .arrow-img.arrow-l-img { margin: -1px 10%; }
+a.to-top-button.sz-1 .arrow-img.caret-img { margin: 1px 18% }
+a.to-top-button.sz-1 .arrow-img.arrow-circle-img,
+a.to-top-button.sz-1 .arrow-img.caret-circle-img,
+a.to-top-button.sz-1 .arrow-img.circle-img,
+a.to-top-button.sz-1 .arrow-img.circle-o-img { margin: 2px 15% }
+a.to-top-button.sz-1 .arrow-img.rise-img { margin: 1px 15% }
+a.to-top-button.sz-1 .arrow-img.top-img { margin: 2px 15% }
+
+a.to-top-button.sz-2 .arrow-img { vertical-align: top; margin: 2px 15% }
+a.to-top-button.sz-2 .arrow-img.drop-img { margin: -2px 0%; }
+a.to-top-button.sz-2 .arrow-img.arrow-l-img { margin: -1px 10%; }
+a.to-top-button.sz-2 .arrow-img.caret-img { margin: 2px 18% }
+a.to-top-button.sz-2 .arrow-img.arrow-circle-img { margin: 4px 15% }
+a.to-top-button.sz-2 .arrow-img.caret-circle-img,
+a.to-top-button.sz-2 .arrow-img.circle-img { margin: 3px 15% }
+a.to-top-button.sz-2 .arrow-img.circle-o-img { margin: 4px 15% }
+a.to-top-button.sz-2 .arrow-img.rise-img { margin: 2px 15% }
+a.to-top-button.sz-2 .arrow-img.top-img { margin: 3px 15% }
+
+a.to-top-button.sz-3 .arrow-img { vertical-align: top; margin: 3px 15% }
+a.to-top-button.sz-3 .arrow-img.drop-img { margin: -2px 0%; }
+a.to-top-button.sz-3 .arrow-img.arrow-l-img { margin: -1px 10%; }
+a.to-top-button.sz-3 .arrow-img.caret-img { margin: 3px 18% }
+a.to-top-button.sz-3 .arrow-img.arrow-circle-img,
+a.to-top-button.sz-3 .arrow-img.caret-circle-img,
+a.to-top-button.sz-3 .arrow-img.circle-img { margin: 5px 15% }
+a.to-top-button.sz-3 .arrow-img.circle-o-img { margin: 6px 15% }
+a.to-top-button.sz-3 .arrow-img.rise-img { margin: 3px 15% }
+a.to-top-button.sz-3 .arrow-img.top-img { margin: 4px 15% }
+
+a.to-top-button.sz-4 .arrow-img { vertical-align: top; margin: 4px 15% }
+a.to-top-button.sz-4 .arrow-img.drop-img { margin: -2px 0%; }
+a.to-top-button.sz-4 .arrow-img.arrow-l-img { margin: 0 10%; }
+a.to-top-button.sz-4 .arrow-img.caret-img { margin: 4px 18% }
+a.to-top-button.sz-4 .arrow-img.arrow-circle-img { margin: 7px 15% }
+a.to-top-button.sz-4 .arrow-img.caret-circle-img,
+a.to-top-button.sz-4 .arrow-img.circle-img { margin: 6px 15% }
+a.to-top-button.sz-4 .arrow-img.circle-o-img { margin: 7px 15% }
+a.to-top-button.sz-4 .arrow-img.rise-img { margin: 4px 15% }
+a.to-top-button.sz-4 .arrow-img.top-img { margin: 5px 15% }
+
+a.to-top-button.sz-5 .arrow-img { vertical-align: top; margin: 5px 15% }
+a.to-top-button.sz-5 .arrow-img.drop-img { margin: -3px 0%; }
+a.to-top-button.sz-5 .arrow-img.arrow-l-img { margin: 1px 10%; }
+a.to-top-button.sz-5 .arrow-img.caret-img { margin: 5px 18% }
+a.to-top-button.sz-5 .arrow-img.arrow-circle-img { margin: 8px 15% }
+a.to-top-button.sz-5 .arrow-img.caret-circle-img,
+a.to-top-button.sz-5 .arrow-img.circle-img { margin: 7px 15% }
+a.to-top-button.sz-5 .arrow-img.circle-o-img { margin: 8px 15% }
+a.to-top-button.sz-5 .arrow-img.rise-img { margin: 4px 15% }
+a.to-top-button.sz-5 .arrow-img.top-img { margin: 5px 15% }
+
+a.to-top-button.sz-6 .arrow-img { vertical-align: top; margin: 6px 15% }
+a.to-top-button.sz-6 .arrow-img.drop-img { margin: -4px 0%; }
+a.to-top-button.sz-6 .arrow-img.arrow-l-img { margin: 1px 10%; }
+a.to-top-button.sz-6 .arrow-img.caret-img { margin: 6px 18% }
+a.to-top-button.sz-6 .arrow-img.arrow-circle-img { margin: 9px 15% }
+a.to-top-button.sz-6 .arrow-img.caret-circle-img,
+a.to-top-button.sz-6 .arrow-img.circle-img { margin: 8px 15% }
+a.to-top-button.sz-6 .arrow-img.circle-o-img { margin: 9px 15% }
+a.to-top-button.sz-6 .arrow-img.rise-img { margin: 6px 15% }
+a.to-top-button.sz-6 .arrow-img.top-img { margin: 7px 15% }
