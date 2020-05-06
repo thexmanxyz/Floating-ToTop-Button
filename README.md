@@ -9,15 +9,15 @@ This project contains a simple and full configurable jQuery plugin which appends
 1. [Download v1.1.2](https://github.com/thexmanxyz/Floating-ToTop-Button/archive/v1.1.2.zip) of the Floating ToTop Button
 2. Extract the files and copy them to your website folder
 3. Define the CSS and JS resource files in your HTML page. You can also place the `<script>` tag after your `<body>` content. Basic resource import example:
-   * **JS:**
+   * **JS (< 3kB):**
    ```HTML
    <script src="js/floating-totop-button.min.js"></script>
    ```
-   * **CSS:**
+   * **CSS (< 8kB):**
    ```HTML
    <link href="css/floating-totop-button.min.css" rel="stylesheet">
    ```
-   * **SCSS:** if you want to use SCSS instead
+   * **SCSS (< 8kB):** if you want to use SCSS instead
    ```SCSS
    @import 'floating-totop-button.scss';
    ```
@@ -37,12 +37,12 @@ This project contains a simple and full configurable jQuery plugin which appends
 Please mind the following stylesheets resources and their explanation when you want to adjust the footprint of the plugin. There are currently two version with certain limits.
 
    * **CSS:**
-       * `floating-totop-button.min.css` includes all settings but has a bigger footprint
-       * `floating-totop-button-tiny.min.css` reduced set of settings which decreases footprint by ~60%
+       * `floating-totop-button.min.css` includes all settings but has a bigger footprint (~ 20kB)
+       * `floating-totop-button-tiny.min.css` reduced set of settings which decreases footprint by ~60% (< 8kB)
        
    * **SCSS:**
-       * `_floating-totop-button.scss` includes all settings but has a bigger footprint
-       * `_floating-totop-button-tiny.scss` reduced set of settings which decreases footprint by ~60%
+       * `_floating-totop-button.scss` includes all settings but has a bigger footprint (~ 20kB)
+       * `_floating-totop-button-tiny.scss` reduced set of settings which decreases footprint by ~60% (< 8kB)
 
 ## Configuration and Parameters
 The plugin can be easily configured during the initialization and the following parameters are currently available. The listing contains the parameters together with their default values.
@@ -58,8 +58,8 @@ The plugin can be easily configured during the initialization and the following 
 - `iconColor: 'w',` | Icon color either black or white (`'b'` or `'w'`).
 - `backgroundColor: '',` | HEX or RGB(A) value for the background color.
 - `border: {` | Border options
-	- `width: 0,` | Border width default values range from `0-3 (0-3px)`.
-	- `color: '' },` | HEX or RGB(A) value for the border color.
+    - `width: 0,` | Border width default values range from `0-3 (0-3px)`.
+    - `color: '' },` | HEX or RGB(A) value for the border color.
 - `position: 'br',` | The following four options are available: `'tl'` = top-left, `'tr'` = top-right, `'bl'` = bottom-left, `'br'` = bottom-right.
 - `size: 4,` | Different button sizes are available, values range from `1-6 (30-80px)`.
 - `fadeInSpeed: 'fast',` | Time to fade in, `'fast'`, `'slow'` or a numerical value in milliseconds e.g. `200`.
@@ -74,12 +74,11 @@ The plugin can be easily configured during the initialization and the following 
 - `linkClasses: [],` | Array of link classes in the form `['a','b','c']`.
 - `imgClasses: [],` | Array of images classes in the form `['d','e','f']`.
 - `clickSelectors: [],` | Additional selectors for the button click event in the form `['g','h','i']`.
-- `animateScroll: function(){ ... },` | Function for the scroll animation (callback).
-- `fadeScroll: function(){ ... },` | Function for the scroll button fading (callback).
-- `resizeHide: function(){ ... }` | Function called during resize event (callback).
+- `animateScroll: function(){ ... },` | Handles the scroll animation.
+- `fadeScroll: function(){ ... },` | Handles the scroll button fade animation.
+- `resizeHide: function(){ ... }` | Determines if the button should be hidden during window resize.
 
 ### Example
-
 The following example shows how you can specify plugin parameters to change the default icon, set the opacity to `0.5` and increases the button dimension to `80px`.
 
 ```Javascript
@@ -106,7 +105,6 @@ a.to-top-button.sh-11 { border-radius: 2%; ... }
 ```
 
 ### Margin
-
 Set the `margin` parameter as follows - `margin: 11` - and create the following CSS selectors:
 
 ```CSS
@@ -126,7 +124,6 @@ a.to-top-button.bp-br.bm-11 { bottom: 150px; right: 150px; }
 ```
 
 ### Border
-
 Set the `border.width` parameter as follows - `border: 4` - and create the following CSS selectors:
 
 **white mode:**
@@ -142,7 +139,6 @@ a.to-top-button.bw-4b { border: 4px solid #000; }
 ```
 
 ### Size
-
 Set the `size` parameter as follows - `size: 7` - and create the following CSS selector:
 
 ```CSS
@@ -169,7 +165,6 @@ a.to-top-button.bs-6 { box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 1); ... }
 Both are not included in tiny version.
 
 ## Features
-
 * customization of icons with 10 different arrow types
 * additional icon images can be easily added and used (SVG)
 * button styling with opacity, shape, margin, border, icon and background color
@@ -209,7 +204,6 @@ None
 * [leungwensen/svg-icon](https://github.com/leungwensen/svg-icon)
 
 ## Credits
-
 Thanks to the jQuery team for this [great plugin tutorial](https://learn.jquery.com/plugins/basic-plugin-creation/).
 
 This project uses SVG icons from [leungwensen/svg-icon](https://github.com/leungwensen/svg-icon).
