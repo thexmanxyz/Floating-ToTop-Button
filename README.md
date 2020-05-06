@@ -15,11 +15,11 @@ This project contains a simple and full configurable jQuery plugin which appends
    ```
    * **CSS (< 8kB):**
    ```HTML
-   <link href="css/floating-totop-button.min.css" rel="stylesheet">
+   <link href="css/floating-totop-button-tiny.min.css" rel="stylesheet">
    ```
    * **SCSS (< 8kB):** if you want to use SCSS instead
    ```SCSS
-   @import 'floating-totop-button.scss';
+   @import 'floating-totop-button-tiny.scss';
    ```
 4. Initialize the plugin with basic values as follows:
    ```JS
